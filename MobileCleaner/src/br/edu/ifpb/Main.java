@@ -16,6 +16,8 @@ public class Main {
         userManager.signUp(user);
 
         System.out.println("teste salvar git Lucas");
+        System.out.println("teste salvar git Lucas 2");
+
 
     }
 }
