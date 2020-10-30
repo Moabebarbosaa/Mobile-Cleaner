@@ -7,13 +7,13 @@ public class ConnectionFactory {
 
     Connection connection = null;
 
-
     public boolean connect() {
 
         try {
             Class.forName("org.sqlite.JDBC");
 
-            String url = "jdbc:sqlite:E:\\GitHub\\Mobile-Cleaner\\MobileCleaner\\database\\database.db";
+            //path
+            String url = "jdbc:sqlite:"+System.getenv("SQLiteBDPath")+"\\database.db";
             this.connection = DriverManager.getConnection(url);
 
             System.out.println("Conectado");
