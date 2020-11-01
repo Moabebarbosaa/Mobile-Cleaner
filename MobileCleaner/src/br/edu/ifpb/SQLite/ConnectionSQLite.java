@@ -1,8 +1,8 @@
-package br.edu.ifpb.connectionSQLite;
+package br.edu.ifpb.SQLite;
 
 import java.sql.*;
 
-public class ConnectionFactory {
+public class ConnectionSQLite {
 
 
     Connection connection = null;
@@ -12,11 +12,10 @@ public class ConnectionFactory {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            //path
             String url = "jdbc:sqlite:"+System.getenv("SQLiteBDPath")+"\\database.db";
             this.connection = DriverManager.getConnection(url);
 
-            System.out.println("Conectado");
+//            System.out.println("Conectado");
 
         } catch (SQLException | ClassNotFoundException e) {
             System.err.println(e.getMessage());
@@ -31,7 +30,7 @@ public class ConnectionFactory {
             if (!this.connection.isClosed()) {
                 this.connection.close();
             }
-            System.out.println("Desconectado");
+//            System.out.println("Desconectado");
         } catch (SQLException e) {
 
             System.err.println(e.getMessage());
@@ -52,7 +51,7 @@ public class ConnectionFactory {
 
     public PreparedStatement createPreparedStatement(String pSQL, int RETURN_GENERATED_KEYS) {
         try {
-            System.out.println("Executando");
+//            System.out.println("Executando");
             return connection.prepareStatement(pSQL, RETURN_GENERATED_KEYS);
         } catch (SQLException e) {
             e.printStackTrace();

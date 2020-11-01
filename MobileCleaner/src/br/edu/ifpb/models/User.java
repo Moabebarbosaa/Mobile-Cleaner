@@ -6,21 +6,26 @@ public class User {
     private int id;
     private String login;
     private String pass;
+    private Integer admin;
+    private String notification;
     private String modelSmartphone;
-    private String companyName;
 
 
-
-    public User(String name, String login, String pass, String modelSmartphone, String companyName) {
+    public User(String name, String login, String pass, String modelSmartphone) {
         this.name = name;
         this.login = login;
         this.pass = pass;
+        this.admin = 0;
+        this.notification = "";
         this.modelSmartphone = modelSmartphone;
-        this.companyName = companyName;
     }
 
     public String getName() {
         return name;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getLogin() {
@@ -31,13 +36,15 @@ public class User {
         return pass;
     }
 
+    public Integer getAdmin() {
+        return admin;
+    }
+
+    public String getNotification() {
+        return notification;
+    }
+
     public String getModelSmartphone() {
         return modelSmartphone;
     }
-
-    public String getCompanyName() {
-        return companyName;
-    }
-
 }
-
