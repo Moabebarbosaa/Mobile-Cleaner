@@ -1,5 +1,7 @@
 package br.edu.ifpb;
 
+import br.edu.ifpb.view.MenuPrincipal;
+
 public class Main{
 
     public static void main(String[] args) {
