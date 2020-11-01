@@ -1,4 +1,4 @@
-package br.edu.ifpb.cotroller.dashboard;
+package br.edu.ifpb.controller.dashboard;
 
 public interface Dashboard {
     void displayDashboard();

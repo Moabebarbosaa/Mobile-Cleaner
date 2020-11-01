@@ -1,7 +1,7 @@
 package br.edu.ifpb.view;
 
-import br.edu.ifpb.cotroller.dashboard.Dashboard;
-import br.edu.ifpb.cotroller.dashboard.DashboardUserProxy;
+import br.edu.ifpb.controller.login.Login;
+import br.edu.ifpb.controller.signup.SignUp;
 import br.edu.ifpb.models.User;
 import br.edu.ifpb.models.UserManager;
 
@@ -61,8 +61,8 @@ public class MenuPrincipal {
         String modelCel = sc.next();
 
         User user = new User(nome, login, senha, modelCel);
-        if (this.userManager.signUp(user)) System.out.println("Cadastro concluído.");
-        else System.out.println("Falha no cadastro");
+        SignUp signup = new SignUp(user);
+        signup.register();
     }
 
     private void fazerLogin() {
@@ -71,12 +71,8 @@ public class MenuPrincipal {
         System.out.println("Senha: ");
         String senha = sc.next();
 
-        if(this.userManager.signIn(login, senha)) {
-            Dashboard dashboard = new DashboardUserProxy(login, senha);
-            dashboard.displayDashboard();
-        } else {
-            System.out.println("Login Inválido!");
-        }
+        Login logar = new Login(login, senha);
+        logar.fazerLogin();
     }
 
     public void dashboardUser() {

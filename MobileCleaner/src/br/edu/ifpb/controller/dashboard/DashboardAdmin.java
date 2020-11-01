@@ -1,12 +1,15 @@
-package br.edu.ifpb.cotroller.dashboard;
+package br.edu.ifpb.controller.dashboard;
 
-
+import br.edu.ifpb.models.UserManager;
 import br.edu.ifpb.view.View;
 
 public class DashboardAdmin implements Dashboard {
 
     private String login;
     private String pass;
+
+    UserManager userManager = new UserManager();
+    View view = new View();
 
     public DashboardAdmin(String login, String pass) {
         this.login = login;
@@ -15,7 +18,6 @@ public class DashboardAdmin implements Dashboard {
 
     @Override
     public void displayDashboard() {
-        View view = new View();
         view.getView().dashboardAdmin();
     }
 
@@ -25,8 +27,9 @@ public class DashboardAdmin implements Dashboard {
     }
 
     public void realizarLimpesa() {
-
+        System.out.println("LIMPANDOOOOOOO");
     }
+
 
 
 }
