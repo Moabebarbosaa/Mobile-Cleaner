@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d7c50f-482d-4437-ad69-2ed45ffc79c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/database/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/null" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Proxy/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Proxy/UserProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/SQLite/ConnectionSQLite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/Dashboard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/view/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/view/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/SQLite/ConnectionSQLite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/Dashboard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardAdmin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/login/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/signup/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/signup/SignUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/UserManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/UserProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/view/MenuPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/view/MenuPrincipal.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +85,7 @@
       <workItem from="1604241363540" duration="5474000" />
       <workItem from="1604272824735" duration="11268000" />
       <workItem from="1604291768338" duration="6679000" />
-      <workItem from="1604328365067" duration="695000" />
+      <workItem from="1604328365067" duration="1346000" />
     </task>
     <servers />
   </component>
