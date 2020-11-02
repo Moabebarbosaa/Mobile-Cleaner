@@ -2,6 +2,7 @@ package br.edu.ifpb.view;
 
 import br.edu.ifpb.FactoryMethod.CadastroModel;
 import br.edu.ifpb.FactoryMethod.ICadaastroModel;
+import br.edu.ifpb.UserBuilder.UserBuilder;
 import br.edu.ifpb.controller.login.Login;
 import br.edu.ifpb.controller.signup.SignUp;
 import br.edu.ifpb.models.User;
@@ -62,7 +63,9 @@ public class MenuPrincipal {
         System.out.println("Modelo Celular: ");
         String modelCel = sc.next();
 
-        User user = new User(nome, login, senha, modelCel);
+        UserBuilder userBuilder = new UserBuilder();
+
+        User user = userBuilder.setName(nome).setLogin(login).setPass(senha).setModelSmartphone(modelCel).builder();
         SignUp signup = new SignUp(user);
         signup.register();
     }

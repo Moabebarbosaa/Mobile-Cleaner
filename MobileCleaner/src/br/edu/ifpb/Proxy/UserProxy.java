@@ -1,6 +1,8 @@
-package br.edu.ifpb.models;
+package br.edu.ifpb.Proxy;
 
 import br.edu.ifpb.SQLite.ConnectionSQLite;
+import br.edu.ifpb.models.User;
+import br.edu.ifpb.models.UserManager;
 
 import java.util.Date;
 

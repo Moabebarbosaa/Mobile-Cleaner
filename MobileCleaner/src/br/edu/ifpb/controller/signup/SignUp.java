@@ -2,7 +2,7 @@ package br.edu.ifpb.controller.signup;
 
 import br.edu.ifpb.models.User;
 import br.edu.ifpb.models.UserManager;
-import br.edu.ifpb.models.UserProxy;
+import br.edu.ifpb.Proxy.UserProxy;
 
 public class SignUp {
 

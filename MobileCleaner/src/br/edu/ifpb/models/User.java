@@ -5,7 +5,7 @@ import java.util.Date;
 public class User {
 
     private String name;
-    private int id;
+    private Integer id;
     private String login;
     private String pass;
     private Integer admin;
@@ -27,7 +27,7 @@ public class User {
         return name;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
