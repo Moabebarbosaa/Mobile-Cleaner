@@ -52,13 +52,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,6 +81,7 @@
       <updated>1604173385716</updated>
       <workItem from="1604173386872" duration="22532000" />
       <workItem from="1604241363540" duration="5474000" />
+      <workItem from="1604272824735" duration="8399000" />
     </task>
     <servers />
   </component>
@@ -90,34 +93,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604210981573" />
-    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1604210248673">
+    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1604280096396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604210248673" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604186644679">
+    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604280096396" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604282576116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604186644679" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282576116" />
     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1604245420319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604245420319" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1604211067788">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1604282478358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604211067788" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1604211067788">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282478358" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1604282478358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604211067788" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1604211067788">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282478358" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1604282478358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604211067788" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1604211067788">
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282478358" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1604282478358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604211067788" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282478358" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604211067789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -134,10 +137,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604211067789" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1604173470746">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1604281083601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604173470746" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604281083601" />
     <state x="342" y="140" key="new project wizard" timestamp="1604201668514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

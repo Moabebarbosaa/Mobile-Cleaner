@@ -1,5 +1,7 @@
 package br.edu.ifpb.models;
 
+import java.util.Date;
+
 public class User {
 
     private String name;
@@ -9,6 +11,7 @@ public class User {
     private Integer admin;
     private String notification;
     private String modelSmartphone;
+    private Date dateSingUp;
 
 
     public User(String name, String login, String pass, String modelSmartphone) {
@@ -46,5 +49,13 @@ public class User {
 
     public String getModelSmartphone() {
         return modelSmartphone;
+    }
+
+    public void setAdmin(Integer admin) {
+        this.admin = admin;
+    }
+
+    public void setDateSingUp(Date dateSingUp) {
+        this.dateSingUp = dateSingUp;
     }
 }

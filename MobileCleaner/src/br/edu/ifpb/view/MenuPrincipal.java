@@ -1,5 +1,7 @@
 package br.edu.ifpb.view;
 
+import br.edu.ifpb.FactoryMethod.CadastroModel;
+import br.edu.ifpb.FactoryMethod.ICadaastroModel;
 import br.edu.ifpb.controller.login.Login;
 import br.edu.ifpb.controller.signup.SignUp;
 import br.edu.ifpb.models.User;
@@ -71,8 +73,9 @@ public class MenuPrincipal {
         System.out.println("Senha: ");
         String senha = sc.next();
 
-        Login logar = new Login(login, senha);
-        logar.fazerLogin();
+        ICadaastroModel factory = new CadastroModel();
+        Login login1 = factory.fazerLogin(login, senha);
+        login1.fazerLogin();
     }
 
     public void dashboardUser() {

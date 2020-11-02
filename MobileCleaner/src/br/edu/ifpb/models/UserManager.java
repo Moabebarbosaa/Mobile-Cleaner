@@ -12,7 +12,6 @@ import java.util.logging.Logger;
 
 public class UserManager extends ConnectionSQLite {
 
-    User user;
 
     public boolean signUp(User user) {
 
@@ -30,6 +29,7 @@ public class UserManager extends ConnectionSQLite {
                 "VALUES (?, ?, ?, ?, ?, ?)";
 
         PreparedStatement preparedStatement = createPreparedStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
 
         try {
             preparedStatement.setString(1, user.getName());
