@@ -1,11 +1,13 @@
 package br.edu.ifpb.models;
 
-import br.edu.ifpb.SQLite.ConnectionSQLite;
+import br.edu.ifpb.Database.ConnectionSQLite;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -133,6 +135,40 @@ public class UserManager extends ConnectionSQLite {
             }
         }
 
+    }
+
+    public List<User> userList() {
+
+        List<User> listUser = new ArrayList<>();
+        User user = new User();
+
+        connect();
+
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+
+        String sql = "SELECT * FROM users";
+
+        try {
+            preparedStatement = createPreparedStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                user = new User();
+                user.setId(resultSet.getInt(1));
+                user.setName(resultSet.getString(2));
+                user.setLogin(resultSet.getString(3));
+                user.setPass(resultSet.getString(4));
+                user.setAdmin(resultSet.getInt(5));
+                user.setNotification(resultSet.getString(6));
+                user.setModelSmartphone(resultSet.getString(7));
+                listUser.add(user);
+            }
+        } catch (Exception e) {
+            System.err.println(e);
+        }
+
+        disconnect();
+        return listUser;
     }
 
 }

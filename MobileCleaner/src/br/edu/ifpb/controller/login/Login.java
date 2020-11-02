@@ -13,12 +13,14 @@ public class Login {
         this.pass = pass;
     }
 
-    public void fazerLogin() {
+    public Boolean fazerLogin() {
 
         if(this.userManager.signIn(this.login, this.pass)) {
-            System.out.println("Login Válido");
+            System.out.println("Logado com sucesso.");
+            return true;
         } else {
-            System.out.println("Login Inválido!");
+            System.out.println("Login não cadastrado.");
+            return false;
         }
     }
 }

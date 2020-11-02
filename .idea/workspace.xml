@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50d7c50f-482d-4437-ad69-2ed45ffc79c5" name="Default Changelist" comment="" />
+    <list default="true" id="50d7c50f-482d-4437-ad69-2ed45ffc79c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/database/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/null" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Proxy/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Proxy/UserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/SQLite/ConnectionSQLite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/Dashboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/dashboard/DashboardUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/controller/login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/models/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/view/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/view/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/SQLite/ConnectionSQLite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/Dashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardAdmin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/dashboard/DashboardUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/login/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/login/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/signup/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/controller/signup/SignUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/models/UserProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/view/MenuPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/view/MenuPrincipal.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +105,9 @@
       <updated>1604173385716</updated>
       <workItem from="1604173386872" duration="22532000" />
       <workItem from="1604241363540" duration="5474000" />
-      <workItem from="1604272824735" duration="10535000" />
+      <workItem from="1604272824735" duration="11268000" />
+      <workItem from="1604291768338" duration="6679000" />
+      <workItem from="1604328365067" duration="695000" />
     </task>
     <servers />
   </component>
@@ -89,38 +115,38 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604210981573">
+    <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604292540592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604210981573" />
-    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1604283473196">
+    <state x="735" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604292540592" />
+    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1604295856410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604283473196" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604282576116">
+    <state x="722" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604295856410" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604293669197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282576116" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604293669197" />
     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1604284276755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604284276755" />
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1604282641622">
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1604298651029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282641622" />
-    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1604282641622">
+    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604298651029" />
+    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1604298651029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282641622" />
-    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1604282641622">
+    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604298651029" />
+    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1604298651029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282641622" />
-    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1604282641622">
+    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604298651029" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1604298651029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604282641622" />
+    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1604298651029" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604211067789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

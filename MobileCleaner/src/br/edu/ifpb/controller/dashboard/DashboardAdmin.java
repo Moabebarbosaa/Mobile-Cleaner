@@ -1,13 +1,35 @@
 package br.edu.ifpb.controller.dashboard;
 
+import br.edu.ifpb.models.User;
 import br.edu.ifpb.models.UserManager;
-import br.edu.ifpb.view.View;
 
-public class DashboardAdmin extends Dashboard {
+import java.util.List;
 
+public class DashboardAdmin {
 
+    public String titulo;
 
-    public DashboardAdmin(String titulo) {
-        super(titulo);
+    UserManager userManager = new UserManager();
+
+    public DashboardAdmin() {
+        this.titulo = "Dashboard - Admin";
     }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void sendMenssage(String mensagem) {
+
+    }
+
+    public void showUserList() {
+        List<User> listUser = userManager.userList();
+
+        for (User user : listUser) {
+            System.out.println(user.toString());
+        }
+
+    }
+
 }

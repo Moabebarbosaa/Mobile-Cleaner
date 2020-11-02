@@ -3,6 +3,8 @@ package br.edu.ifpb.view;
 import br.edu.ifpb.FactoryMethod.CadastroModel;
 import br.edu.ifpb.FactoryMethod.ICadaastroModel;
 import br.edu.ifpb.UserBuilder.UserBuilder;
+import br.edu.ifpb.controller.dashboard.DashboardAdmin;
+import br.edu.ifpb.controller.dashboard.DashboardUser;
 import br.edu.ifpb.controller.login.Login;
 import br.edu.ifpb.controller.signup.SignUp;
 import br.edu.ifpb.models.User;
@@ -78,21 +80,25 @@ public class MenuPrincipal {
 
         ICadaastroModel factory = new CadastroModel();
         Login login1 = factory.fazerLogin(login, senha);
-        login1.fazerLogin();
+        if (userManager.checkAdmin(login, senha)) dashboardAdmin();
+        else dashboardUser();
+
     }
 
     public void dashboardUser() {
 
+        DashboardUser dashboardUser = new DashboardUser();
+
         while (true) {
-            String menu = "\n\n\n===============================\n";
-            menu += "DASHBOAD(user) - MobileCleaner\n\n";
+            String menu = "\n\n\n=================================================\n";
+            menu += dashboardUser.getTitulo() + " - MobileCleaner\n\n";
             menu += "1 - Realizar limpesa\n";
             menu += "2 - Quantidade de dias para proxima limpesa\n";
             menu += "3 - Verificar notificações\n";
             menu += "4 - Locais para limpesa\n";
             menu += "5 - Histórico de limpesa\n";
             menu += "6 - Voltar\n";
-            menu += "===============================\n";
+            menu += "=================================================\n";
 
             System.out.println(menu);
             System.out.println("Escolha uma opção: ");
@@ -132,9 +138,11 @@ public class MenuPrincipal {
 
     public void dashboardAdmin() {
 
+        DashboardAdmin dashboardAdmin = new DashboardAdmin();
+
         while (true) {
             String menu = "\n\n\n===============================\n";
-            menu += "DASHBOAD(admin) - MobileCleaner\n\n";
+            menu += dashboardAdmin.getTitulo() + " - MobileCleaner\n\n";
             menu += "1 - Enviar mensagem para um usuario\n";
             menu += "2 - Listas de usuarios\n";
             menu += "3 - Listas de usuarios atrasadas com a limpesa\n";
@@ -147,11 +155,12 @@ public class MenuPrincipal {
 
             switch (opcao) {
                 case 1:
-
+                    dashboardAdmin.showUserList();
+                    System.out.println("\nEscolha o ID para mandar a mensagem:");
                     System.out.println();
                     break;
                 case 2:
-
+                    dashboardAdmin.showUserList();
                     System.out.println();
                     break;
                 case 3:

@@ -1,4 +1,4 @@
-package br.edu.ifpb.SQLite;
+package br.edu.ifpb.Database;
 
 import java.sql.*;
 
@@ -15,7 +15,7 @@ public class ConnectionSQLite {
             String url = "jdbc:sqlite:"+System.getenv("SQLiteBDPath")+"\\database.db";
             this.connection = DriverManager.getConnection(url);
 
-            System.out.println("Conectado" + this.connection.toString());
+            //System.out.println("Conectado");
 
         } catch (SQLException | ClassNotFoundException e) {
             System.err.println(e.getMessage());
@@ -31,7 +31,7 @@ public class ConnectionSQLite {
             if (!this.connection.isClosed()) {
                 this.connection.close();
             }
-            System.out.println("Desconectado");
+            //System.out.println("Desconectado");
         } catch (SQLException e) {
 
             System.err.println(e.getMessage());

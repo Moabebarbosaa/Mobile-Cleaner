@@ -1,6 +1,6 @@
 package br.edu.ifpb.Proxy;
 
-import br.edu.ifpb.SQLite.ConnectionSQLite;
+import br.edu.ifpb.Database.ConnectionSQLite;
 import br.edu.ifpb.models.User;
 import br.edu.ifpb.models.UserManager;
 
