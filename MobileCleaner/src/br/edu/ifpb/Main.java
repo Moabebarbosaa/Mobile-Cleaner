@@ -9,7 +9,7 @@ public class Main{
         MenuPrincipal menuPrincipal = new MenuPrincipal();
         menuPrincipal.exibirMenu();
         
-        System.out.println("");
+        System.out.println("LUCAS");
  
     }
 }
