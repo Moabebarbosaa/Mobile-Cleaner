@@ -10,6 +10,7 @@ public class Main{
         menuPrincipal.exibirMenu();
         
         System.out.println("");
+        System.out.println("Moabe");
  
     }
 }
