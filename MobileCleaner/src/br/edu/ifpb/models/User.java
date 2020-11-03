@@ -8,7 +8,7 @@ public class User {
     private Integer id;
     private String login;
     private String pass;
-    private Integer admin;
+    private String permission;
     private String notification;
     private String modelSmartphone;
     private Date dateSingUp;
@@ -18,7 +18,7 @@ public class User {
         this.name = name;
         this.login = login;
         this.pass = pass;
-        this.admin = 0;
+        this.permission = "user";
         this.notification = "";
         this.modelSmartphone = modelSmartphone;
     }
@@ -58,12 +58,12 @@ public class User {
         this.pass = pass;
     }
 
-    public Integer getAdmin() {
-        return admin;
+    public String getPermission() {
+        return permission;
     }
 
-    public void setAdmin(Integer admin) {
-        this.admin = admin;
+    public void setPermission(String permission) {
+        this.permission = permission;
     }
 
     public String getNotification() {

@@ -92,11 +92,11 @@ public class MenuPrincipal {
         while (true) {
             String menu = "\n\n\n=================================================\n";
             menu += dashboardUser.getTitulo() + " - MobileCleaner\n\n";
-            menu += "1 - Realizar limpesa\n";
-            menu += "2 - Quantidade de dias para proxima limpesa\n";
+            menu += "1 - Realizar limpeza\n";
+            menu += "2 - Quantidade de dias para proxima limpeza\n";
             menu += "3 - Verificar notificações\n";
-            menu += "4 - Locais para limpesa\n";
-            menu += "5 - Histórico de limpesa\n";
+            menu += "4 - Locais para limpeza\n";
+            menu += "5 - Histórico de limpeza\n";
             menu += "6 - Voltar\n";
             menu += "=================================================\n";
 
@@ -106,7 +106,7 @@ public class MenuPrincipal {
 
             switch (opcao) {
                 case 1:
-
+                    performCleaningOption();
                     System.out.println();
                     break;
                 case 2:
@@ -116,7 +116,7 @@ public class MenuPrincipal {
                 case 3:
                     return;
                 case 4:
-
+                    dashboardUser.listPlaces();
                     System.out.println();
                     break;
                 case 5:
@@ -176,6 +176,17 @@ public class MenuPrincipal {
             }
 
         }
+
+    }
+
+    public void performCleaningOption() {
+        DashboardUser dashboardUser = new DashboardUser();
+        dashboardUser.listPlaces();
+
+        System.out.println("Opção: ");
+        String option = sc.next();
+
+        dashboardUser.performCleaning(option);
 
     }
 }

@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 public class UserManager extends ConnectionSQLite {
 
 
@@ -25,7 +24,7 @@ public class UserManager extends ConnectionSQLite {
                 "name, " +
                 "login, " +
                 "pass, " +
-                "admin, " +
+                "permission, " +
                 "notification, " +
                 "modelSmartphone) " +
                 "VALUES (?, ?, ?, ?, ?, ?)";
@@ -37,7 +36,7 @@ public class UserManager extends ConnectionSQLite {
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getLogin());
             preparedStatement.setString(3, user.getPass());
-            preparedStatement.setString(4, user.getAdmin().toString());
+            preparedStatement.setString(4, user.getPermission());
             preparedStatement.setString(5, user.getNotification());
             preparedStatement.setString(6, user.getModelSmartphone());
             preparedStatement.executeUpdate();
@@ -104,8 +103,8 @@ public class UserManager extends ConnectionSQLite {
         ResultSet resultSet = null;
         PreparedStatement preparedStatement = null;
 
-        String sql = "SELECT admin "
-                + "FROM users "
+        String sql = "SELECT permission"
+                + " FROM users "
                 + "WHERE login = '" + login + "' AND "
                 + "pass = '" + pass + "'";
 
@@ -114,7 +113,8 @@ public class UserManager extends ConnectionSQLite {
         try {
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                if (resultSet.getInt(1) == 1) {
+                if (resultSet.getString(1).equals("admin")) {
+
                     return true;
                 }
                 return false;
@@ -158,7 +158,7 @@ public class UserManager extends ConnectionSQLite {
                 user.setName(resultSet.getString(2));
                 user.setLogin(resultSet.getString(3));
                 user.setPass(resultSet.getString(4));
-                user.setAdmin(resultSet.getInt(5));
+                user.setPermission(resultSet.getString(5));
                 user.setNotification(resultSet.getString(6));
                 user.setModelSmartphone(resultSet.getString(7));
                 listUser.add(user);
