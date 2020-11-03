@@ -2,6 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d7c50f-482d-4437-ad69-2ed45ffc79c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/MenuFacade/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/Database/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/Database/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/ConnectionFactory/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/ConnectionFactory/IConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Dashboard/Admin/DashboardAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Dashboard/Admin/IDashboardAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Dashboard/User/DashboardUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Dashboard/User/IDashboardUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/MenuPrincipal/MenuPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/MenuPrincipal/MenuPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Model/User/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Model/User/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Proxy/UserProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/Proxy/UserProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/UserAccess/IUserAccessFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/UserAccess/IUserAccessFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/UserAccess/SingUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/UserAccess/SingUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/UserAccess/UserAccessFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/out/production/MobileCleaner/br/edu/ifpb/UserAccess/UserAccessFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/ConnectionDB/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/ConnectionDB/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/MenuPrincipal/MenuAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/MenuFacade/MenuAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/MenuPrincipal/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/MenuFacade/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/Proxy/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/Proxy/UserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/UserAccess/IUserAccessFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/UserAccess/IUserAccessFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/UserAccess/SingUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/UserAccess/SingUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/UserAccess/UserAccessFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MobileCleanerOrganizadoEmAndamento/src/br/edu/ifpb/UserAccess/UserAccessFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +42,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1jenNcHZXX8Omrez1Sxx9GA3SrD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Documentos/Padroes_Projetos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,19 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -86,6 +98,7 @@
       <workItem from="1604272824735" duration="11268000" />
       <workItem from="1604291768338" duration="6679000" />
       <workItem from="1604328365067" duration="1346000" />
+      <workItem from="1604412397908" duration="1320000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-package br.edu.ifpb.MenuPrincipal;
+package br.edu.ifpb.MenuFacade;
 
 import java.util.Scanner;
 

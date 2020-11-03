@@ -1,10 +1,11 @@
 package br.edu.ifpb.Proxy;
+import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
 import java.sql.Date;
 
-public class UserProxy {
+public class UserProxy implements IUser {
 
     UserManager userManager;
 

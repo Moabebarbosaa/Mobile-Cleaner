@@ -9,10 +9,11 @@ public class SingUp {
 
     private final User user;
 
-    UserProxy userProxy = new UserProxy(new UserManager());
+    UserProxy userProxy;
 
-    public SingUp(User user) {
+    public SingUp(User user, UserProxy userProxy) {
         this.user = user;
+        this.userProxy = userProxy;
     }
 
     public boolean register() {

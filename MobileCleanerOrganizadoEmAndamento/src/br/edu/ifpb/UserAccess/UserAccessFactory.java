@@ -1,6 +1,7 @@
 package br.edu.ifpb.UserAccess;
 
 import br.edu.ifpb.Model.User.User;
+import br.edu.ifpb.Proxy.UserProxy;
 
 public class UserAccessFactory implements IUserAccessFactory {
 
@@ -21,8 +22,8 @@ public class UserAccessFactory implements IUserAccessFactory {
 
 
     @Override
-    public SingUp singUp(User user) {
-        return new SingUp(user);
+    public SingUp singUp(User user, UserProxy userProxy) {
+        return new SingUp(user, userProxy);
     }
 
 }

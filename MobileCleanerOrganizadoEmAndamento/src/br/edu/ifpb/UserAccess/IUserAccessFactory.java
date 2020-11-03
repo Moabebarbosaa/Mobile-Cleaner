@@ -1,6 +1,7 @@
 package br.edu.ifpb.UserAccess;
 
 import br.edu.ifpb.Model.User.User;
+import br.edu.ifpb.Proxy.UserProxy;
 
 public interface IUserAccessFactory {
 
@@ -10,6 +11,6 @@ public interface IUserAccessFactory {
 
     public SingIn singIn(User user);
 
-    public SingUp singUp(User user);
+    public SingUp singUp(User user, UserProxy userProxy);
 
 }

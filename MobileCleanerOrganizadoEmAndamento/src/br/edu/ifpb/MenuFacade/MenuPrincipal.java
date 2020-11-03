@@ -1,7 +1,8 @@
-package br.edu.ifpb.MenuPrincipal;
+package br.edu.ifpb.MenuFacade;
 
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
+import br.edu.ifpb.Proxy.UserProxy;
 import br.edu.ifpb.UserAccess.IUserAccessFactory;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 
@@ -11,11 +12,13 @@ public class MenuPrincipal extends MenuAbstract{
     IUserBuilder userBuilder;
     IUserAccessFactory userAccessFactory;
     UserManager userManager;
+    UserProxy userProxy;
 
-    public MenuPrincipal(IUserBuilder userBuilder, IUserAccessFactory userAccessFactory, UserManager userManager) {
+    public MenuPrincipal(IUserBuilder userBuilder, IUserAccessFactory userAccessFactory, UserManager userManager, UserProxy userProxy) {
         this.userBuilder = userBuilder;
         this.userAccessFactory = userAccessFactory;
         this.userManager = userManager;
+        this.userProxy = userProxy;
     }
 
     public void exibirMenu() {
@@ -62,7 +65,7 @@ public class MenuPrincipal extends MenuAbstract{
         String modelSmartphone = obterString("Modelo do celular: ");
 
         User user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
-        if (this.userAccessFactory.singUp(user).register()) System.out.println("Cadastrado com sucesso.");
+        if (this.userAccessFactory.singUp(user, this.userProxy).register()) System.out.println("Cadastrado com sucesso.");
         else System.out.println("Falha ao cadastrar.");
     }
 
