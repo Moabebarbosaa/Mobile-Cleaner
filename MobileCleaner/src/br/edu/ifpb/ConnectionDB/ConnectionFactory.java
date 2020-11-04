@@ -10,7 +10,7 @@ public class ConnectionFactory implements IConnectionFactory{
     public Connection getConnection() {
         try {
             Class.forName("org.sqlite.JDBC");
-            String url = "jdbc:sqlite:E:\\GitHub\\Mobile-Cleaner\\MobileCleanerOrganizadoEmAndamento\\Database\\database.db";
+            String url = "jdbc:sqlite:" + System.getenv("SQLiteBDPath") + "\\database.db";
 
             return DriverManager.getConnection(url);
         } catch (SQLException | ClassNotFoundException ex) {
