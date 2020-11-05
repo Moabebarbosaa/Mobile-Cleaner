@@ -1,5 +1,6 @@
 package br.edu.ifpb.ActionDashboard;
 
+import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
@@ -13,7 +14,7 @@ public class UserList {
         this.userManager = userManager;
     }
 
-    public List<User> show(){
+    public List<IUser> show(){
         return this.userManager.getListUser();
     }
 

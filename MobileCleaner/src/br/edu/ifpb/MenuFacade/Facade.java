@@ -4,7 +4,7 @@ import br.edu.ifpb.ActionDashboard.ActionDashboardFactory;
 import br.edu.ifpb.CleanPlaceBuilder.CleanPlaceBuilder;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.UserManager;
-import br.edu.ifpb.Proxy.UserProxy;
+import br.edu.ifpb.Model.User.UserProxy;
 import br.edu.ifpb.UserAccess.IUserAccessFactory;
 import br.edu.ifpb.UserAccess.UserAccessFactory;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
@@ -35,7 +35,6 @@ public class Facade {
         this.menuDashboardAdmin = new MenuDashboardAdmin("Menu Administrador", this.actionDashboardFactory, this.userManager, this.cleanPlaceManager, this.cleanPlaceBuilder);
         this.menuDashboardUser = new MenuDashboardUser("Menu Usuário", this.actionDashboardFactory, this.userManager, this.cleanPlaceManager);
         this.menuPrincipal = new MenuPrincipal("Menu Principal",userBuilder, userAccessFactory, userManager, userProxy, menuDashboardAdmin, menuDashboardUser);
-
     }
 
     public void exibirMenu() {

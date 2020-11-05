@@ -1,4 +1,4 @@
-package br.edu.ifpb.Proxy;
+package br.edu.ifpb.Model.User;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
@@ -12,9 +12,10 @@ public class UserProxy {
         this.userManager = userManager;
     }
 
-    public boolean singUp(User user) {
-        user.setDateSingUp(new Date(2020,11,3));
+    public boolean singUp(IUser user) {
+        user.setDateSingUp("");
         user.setPermission("user");
+        user.setNotification("");
         return this.userManager.addUser(user);
     }
 }

@@ -1,8 +1,9 @@
 package br.edu.ifpb.MenuFacade;
 
+import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
-import br.edu.ifpb.Proxy.UserProxy;
+import br.edu.ifpb.Model.User.UserProxy;
 import br.edu.ifpb.UserAccess.IUserAccessFactory;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 
@@ -69,7 +70,7 @@ public class MenuPrincipal extends MenuAbstract{
         String pass = obterString("Senha: ");
         String modelSmartphone = obterString("Modelo do celular: ");
 
-        User user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
+        IUser user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
         if (this.userAccessFactory.singUp(user, this.userProxy).register()) System.out.println("Cadastrado com sucesso.");
         else System.out.println("Falha ao cadastrar.");
     }
@@ -79,7 +80,7 @@ public class MenuPrincipal extends MenuAbstract{
         String login = obterString("Login: ");
         String pass = obterString("Senha: ");
 
-        User user = this.userBuilder.setLogin(login).setPass(pass).builder();
+        IUser user = this.userBuilder.setLogin(login).setPass(pass).builder();
         if(this.userAccessFactory.singIn(userManager, user).enter()) {
             if (userManager.checkAdmin(user)) this.menuDashboardAdmin.showDashboardAdmin(user);
             else this.menuDashboardUser.showDashboardUser(user);

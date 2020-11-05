@@ -4,6 +4,7 @@ import br.edu.ifpb.ActionDashboard.ActionDashboardFactory;
 import br.edu.ifpb.CleanPlaceBuilder.CleanPlaceBuilder;
 import br.edu.ifpb.Model.CleanPlace.CleanPlace;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
+import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
@@ -12,14 +13,15 @@ import java.util.Scanner;
 
 public class MenuDashboardAdmin extends MenuAbstract{
 
-    private Scanner sc = new Scanner(System.in);
+    private final Scanner sc = new Scanner(System.in);
 
     ActionDashboardFactory actionDashboardFactory;
     UserManager userManager;
     CleanPlaceManager cleanPlaceManager;
     CleanPlaceBuilder cleanPlaceBuilder;
 
-    public MenuDashboardAdmin(String title, ActionDashboardFactory actionDashboardFactory, UserManager userManager, CleanPlaceManager cleanPlaceManager, CleanPlaceBuilder cleanPlaceBuilder) {
+    public MenuDashboardAdmin(String title, ActionDashboardFactory actionDashboardFactory, UserManager userManager,
+                              CleanPlaceManager cleanPlaceManager, CleanPlaceBuilder cleanPlaceBuilder) {
         super(title);
         this.actionDashboardFactory = actionDashboardFactory;
         this.userManager = userManager;
@@ -27,7 +29,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
         this.cleanPlaceBuilder = cleanPlaceBuilder;
     }
 
-    public void showDashboardAdmin(User user) {
+    public void showDashboardAdmin(IUser user) {
 
         while (true) {
             String menu = "\n\n\n=================================================\n";
@@ -90,9 +92,9 @@ public class MenuDashboardAdmin extends MenuAbstract{
     }
 
     private void showUsers() {
-        List<User> list = this.actionDashboardFactory.showUserList(this.userManager).show();
+        List<IUser> list = this.actionDashboardFactory.showUserList(this.userManager).show();
 
-        for (User user: list) {
+        for (IUser user: list) {
             System.out.println(user.toString());
         }
     }

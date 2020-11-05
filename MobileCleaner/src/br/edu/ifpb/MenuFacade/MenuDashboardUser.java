@@ -3,6 +3,7 @@ package br.edu.ifpb.MenuFacade;
 import br.edu.ifpb.ActionDashboard.ActionDashboardFactory;
 import br.edu.ifpb.Model.CleanPlace.CleanPlace;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
+import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
@@ -21,7 +22,7 @@ public class MenuDashboardUser extends MenuAbstract{
         this.cleanPlaceManager = cleanPlaceManager;
     }
 
-    public void showDashboardUser(User user) {
+    public void showDashboardUser(IUser user) {
         while (true) {
             String menu = "\n\n\n=================================================\n";
             menu += this.title + " - MobileCleaner\n\n";

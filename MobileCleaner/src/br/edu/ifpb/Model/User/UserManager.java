@@ -16,7 +16,7 @@ public class UserManager {
         this.connection = new ConnectionFactory().getConnection();
     }
 
-    public Boolean addUser(User user) {
+    public Boolean addUser(IUser user) {
         String sql = "INSERT INTO users(" +
                 "name, " +
                 "login, " +
@@ -33,7 +33,7 @@ public class UserManager {
             preparedStatement.setString(4, user.getPermission());
             preparedStatement.setString(5, user.getNotification());
             preparedStatement.setString(6, user.getModelSmartphone());
-            preparedStatement.setDate(7, user.getDateSingUp());
+            preparedStatement.setString(7, user.getDateSingUp());
             preparedStatement.executeUpdate();
             preparedStatement.close();
             return true;
@@ -43,7 +43,7 @@ public class UserManager {
         }
     }
 
-    public boolean verifyUser(User user) {
+    public boolean verifyUser(IUser user) {
 
         ResultSet resultSet = null;
 
@@ -75,7 +75,7 @@ public class UserManager {
         }
     }
 
-    public boolean checkAdmin(User user) {
+    public boolean checkAdmin(IUser user) {
         ResultSet resultSet = null;
 
         String sql = "SELECT permission"
@@ -104,11 +104,11 @@ public class UserManager {
     }
 
 
-    public List<User> getListUser(){
-        List<User> list = new ArrayList<>();
+    public List<IUser> getListUser(){
+        List<IUser> list = new ArrayList<>();
 
         ResultSet resultSet = null;
-        User user = new User();
+        IUser user = new User();
 
         String sql = "SELECT * FROM users";
 
@@ -126,7 +126,7 @@ public class UserManager {
                 user.setPermission(resultSet.getString(5));
                 user.setNotification(resultSet.getString(6));
                 user.setModelSmartphone(resultSet.getString(7));
-                user.setDateSingUp(resultSet.getDate(8));
+                user.setDateSingUp(resultSet.getString(8));
                 list.add(user);
             }
         } catch (SQLException e){
@@ -157,7 +157,7 @@ public class UserManager {
     }
 
 
-    public String verify(User user) {
+    public String verify(IUser user) {
 
         String sql = "SELECT * FROM users WHERE login = '" + user.getLogin() + "'";
 

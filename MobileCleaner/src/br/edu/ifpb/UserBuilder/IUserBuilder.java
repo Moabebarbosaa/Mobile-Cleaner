@@ -1,5 +1,6 @@
 package br.edu.ifpb.UserBuilder;
 
+import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 
 public interface IUserBuilder {
@@ -10,6 +11,6 @@ public interface IUserBuilder {
     public IUserBuilder setModelSmartphone(String modelSmartphone);
 
 
-    public User builder();
+    public IUser builder();
 
 }

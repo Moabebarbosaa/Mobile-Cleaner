@@ -1,5 +1,6 @@
 package br.edu.ifpb.UserBuilder;
 
+import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.UserAccess.UserAccessFactory;
 
@@ -38,9 +39,9 @@ public class UserBuilder implements IUserBuilder {
 
 
     @Override
-    public User builder() {
+    public IUser builder() {
         UserAccessFactory userAccess = new UserAccessFactory();
-        User user = userAccess.createUser(this.name, this.login, this.pass, this.modelSmartphone);
+        IUser user = userAccess.createUser(this.name, this.login, this.pass, this.modelSmartphone);
         return user;
     }
 
