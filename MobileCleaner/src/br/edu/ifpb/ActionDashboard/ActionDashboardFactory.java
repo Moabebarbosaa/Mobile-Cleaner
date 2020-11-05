@@ -2,7 +2,10 @@ package br.edu.ifpb.ActionDashboard;
 
 import br.edu.ifpb.ActionDashboard.CleaningTipsStrategy.CleaningTipsStrategy;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
+import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
+
+import java.util.List;
 
 public class ActionDashboardFactory implements IActionDashboard{
 
@@ -23,8 +26,8 @@ public class ActionDashboardFactory implements IActionDashboard{
     }
 
     @Override
-    public void listUserBehind(UserManager userManager) {
-
+    public ListUserBehind listUserBehind(UserManager userManager) {
+        return new ListUserBehind(userManager);
     }
 
     @Override

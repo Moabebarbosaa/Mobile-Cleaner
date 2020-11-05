@@ -78,7 +78,7 @@ public class MenuPrincipal extends MenuAbstract{
     }
 
 
-    private void singIn() {
+    private void singIn() throws ParseException {
         String login = obterString("Login: ");
         String pass = obterString("Senha: ");
 

@@ -133,7 +133,13 @@ public class UserManager {
                 user.setPermission(resultSet.getString(5));
                 user.setNotification(resultSet.getString(6));
                 user.setModelSmartphone(resultSet.getString(7));
-                list.add(user);
+                user.setDateNextClean(resultSet.getString(8));
+                user.setDateSingUp(resultSet.getString(9));
+
+                if (user.getPermission().equals("user")){
+                    list.add(user);
+                }
+
             }
         } catch (SQLException e){
             throw new RuntimeException(e);

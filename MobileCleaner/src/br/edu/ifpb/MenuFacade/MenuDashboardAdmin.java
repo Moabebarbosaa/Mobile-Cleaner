@@ -10,6 +10,7 @@ import br.edu.ifpb.Model.User.UserManager;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 import br.edu.ifpb.UserBuilder.UserBuilder;
 
+import java.text.ParseException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -32,7 +33,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
         this.userBuilder = userBuilder;
     }
 
-    public void showDashboardAdmin() {
+    public void showDashboardAdmin() throws ParseException {
 
         while (true) {
             String menu = "\n\n\n=================================================\n";
@@ -65,7 +66,13 @@ public class MenuDashboardAdmin extends MenuAbstract{
                     showUsers();
                     break;
                 case 3:
-                    System.out.println();
+                    List<User> listBehind = this.actionDashboardFactory.listUserBehind(this.userManager).showBehind();
+                    System.out.println("\nUsuários com limpeza atrasada: \n");
+
+                    for (User user: listBehind) {
+                        System.out.println(user.toString());
+                    }
+                    break;
                 case 4:
                     System.out.println("Nome: ");
                     String name = sc.nextLine();

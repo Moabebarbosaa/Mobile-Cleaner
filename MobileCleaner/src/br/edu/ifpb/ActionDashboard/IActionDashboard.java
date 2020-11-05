@@ -2,6 +2,7 @@ package br.edu.ifpb.ActionDashboard;
 
 import br.edu.ifpb.ActionDashboard.CleaningTipsStrategy.CleaningTipsStrategy;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
+import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
 public interface IActionDashboard {
@@ -10,7 +11,7 @@ public interface IActionDashboard {
 
     public SendMessage sendMessage(UserManager userManager);
 
-    public void listUserBehind(UserManager userManager);
+    public ListUserBehind listUserBehind(UserManager userManager);
 
     public CleanUp cleanUp(UserManager userManager);
 
