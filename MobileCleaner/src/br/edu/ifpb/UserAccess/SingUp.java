@@ -1,7 +1,5 @@
 package br.edu.ifpb.UserAccess;
 
-
-import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserProxy;
 

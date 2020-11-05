@@ -27,8 +27,8 @@ public class ActionDashboardFactory implements IActionDashboard{
     }
 
     @Override
-    public void performCleaning(UserManager userManager) {
-
+    public CleanUp cleanUp(UserManager userManager) {
+        return new CleanUp(userManager);
     }
 
     @Override

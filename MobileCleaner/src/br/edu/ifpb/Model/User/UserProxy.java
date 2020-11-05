@@ -53,7 +53,7 @@ public class UserProxy implements IUser{
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat(FormatoDaData);
             DataAlterada = simpleDateFormat.format(ob.getTime());
         } catch (Exception e) {
-            return  "inválido";
+            return "inválido";
         }
 
         return DataAlterada;

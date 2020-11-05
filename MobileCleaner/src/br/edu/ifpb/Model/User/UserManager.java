@@ -4,7 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 
@@ -46,6 +49,7 @@ public class UserManager {
         }
     }
 
+
     public boolean verifyUser(User user) {
 
         ResultSet resultSet = null;
@@ -77,6 +81,7 @@ public class UserManager {
             }
         }
     }
+
 
     public boolean checkAdmin(User user) {
         ResultSet resultSet = null;
@@ -111,10 +116,9 @@ public class UserManager {
         List<User> list = new ArrayList<>();
 
         ResultSet resultSet = null;
-        User user = new User();
+        User user;
 
         String sql = "SELECT * FROM users";
-
 
         try{
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -189,6 +193,50 @@ public class UserManager {
         }
         return "Sem notificação";
     }
+
+
+    public String setDateNextClean(String date, int days) {
+        String DataAlterada = "";
+        String FormatoDaData = "dd/MM/yyyy";
+        try {
+            SimpleDateFormat format = new SimpleDateFormat(FormatoDaData);
+            java.sql.Date Data = new java.sql.Date(format.parse(date).getTime());
+
+            Calendar ob = Calendar.getInstance();
+            ob.setTime(Data);
+            ob.add(Calendar.DATE, + days);
+
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat(FormatoDaData);
+            DataAlterada = simpleDateFormat.format(ob.getTime());
+        } catch (Exception e) {
+            return "inválido";
+        }
+
+        return DataAlterada;
+    }
+
+
+    public boolean clean(String login) {
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = new Date();
+
+        String sql = "UPDATE users SET dateNextClean = '" +
+                setDateNextClean(simpleDateFormat.format(date),
+                7) + "' WHERE login = " + "'" + login + "'";
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            return true;
+
+        } catch (SQLException u) {
+            throw new RuntimeException(u);
+        }
+    }
+
+
 
 
 }

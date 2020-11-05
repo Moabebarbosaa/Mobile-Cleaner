@@ -3,7 +3,6 @@ package br.edu.ifpb.MenuFacade;
 import br.edu.ifpb.ActionDashboard.ActionDashboardFactory;
 import br.edu.ifpb.Model.CleanPlace.CleanPlace;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
-import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
@@ -27,7 +26,7 @@ public class MenuDashboardUser extends MenuAbstract{
             String menu = "\n\n\n=================================================\n";
             menu += this.title + " - MobileCleaner\n\n";
             menu += "1 - Realizar limpesa\n";
-            menu += "2 - Quantidade de dias para proxima limpesa\n";
+            menu += "2 - Verificar data da proxima limpesa\n";
             menu += "3 - Verificar notificações\n";
             menu += "4 - Locais para limpesa\n";
             menu += "5 - Histórico de limpesa\n";
@@ -40,12 +39,15 @@ public class MenuDashboardUser extends MenuAbstract{
 
             switch (chosenOption) {
                 case 1:
-
+                    if (this.actionDashboardFactory.cleanUp(this.userManager).toClean(user.getLogin())) {
+                        System.out.println("Limpeza realizada com sucesso.");
+                    } else {
+                        System.out.println("Limpeza não realizada");
+                    }
                     System.out.println();
                     break;
                 case 2:
-
-                    System.out.println();
+                    System.out.println("");
                     break;
                 case 3:
                     String message = this.actionDashboardFactory.verifyNotification(this.userManager).show(user);

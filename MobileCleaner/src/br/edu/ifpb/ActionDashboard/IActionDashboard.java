@@ -11,7 +11,7 @@ public interface IActionDashboard {
 
     public void listUserBehind(UserManager userManager);
 
-    public void performCleaning(UserManager userManager);
+    public CleanUp cleanUp(UserManager userManager);
 
     public void nextClean(UserManager userManager);
 
