@@ -237,6 +237,31 @@ public class UserManager {
     }
 
 
+    public String showNextDate(String login) {
+        ResultSet resultSet = null;
 
+        String sql = "SELECT * FROM users WHERE login = '" + login + "'";
+
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                return resultSet.getString(8);
+            } else {
+                return "Não encontrado.";
+            }
+        } catch (SQLException u) {
+            u.printStackTrace();
+            return "Não encontrado.";
+        } finally {
+            try {
+                resultSet.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+    }
 
 }

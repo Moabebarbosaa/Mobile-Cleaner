@@ -13,12 +13,14 @@ public interface IActionDashboard {
 
     public CleanUp cleanUp(UserManager userManager);
 
-    public void nextClean(UserManager userManager);
+    public DateNextClean dateNextClean(UserManager userManager);
 
     public VerifyNotification verifyNotification(UserManager userManager);
 
     public PlacesClean placesClean(CleanPlaceManager cleanPlaceManager);
 
     public AddCleanPlace addCleanPlace(CleanPlaceManager cleanPlaceManager);
+
+    public AddAdmin addAdmin(UserManager userManager);
 
 }

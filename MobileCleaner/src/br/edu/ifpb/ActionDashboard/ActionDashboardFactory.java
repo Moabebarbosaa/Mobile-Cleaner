@@ -32,8 +32,8 @@ public class ActionDashboardFactory implements IActionDashboard{
     }
 
     @Override
-    public void nextClean(UserManager userManager) {
-
+    public DateNextClean dateNextClean(UserManager userManager) {
+        return new DateNextClean(this.userManager);
     }
 
     @Override
@@ -49,5 +49,10 @@ public class ActionDashboardFactory implements IActionDashboard{
     @Override
     public AddCleanPlace addCleanPlace(CleanPlaceManager cleanPlaceManager) {
         return new AddCleanPlace(cleanPlaceManager);
+    }
+
+    @Override
+    public AddAdmin addAdmin(UserManager userManager) {
+        return new AddAdmin(this.userManager);
     }
 }

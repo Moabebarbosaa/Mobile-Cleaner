@@ -25,6 +25,14 @@ public class User {
         this.pass = pass;
     }
 
+    public User(String name, String login, String pass, String modelSmartphone, String permission) {
+        this.name = name;
+        this.login = login;
+        this.pass = pass;
+        this.modelSmartphone = modelSmartphone;
+        this.permission = permission;
+    }
+
     public User() {
     }
 

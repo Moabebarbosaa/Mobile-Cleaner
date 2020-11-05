@@ -84,7 +84,7 @@ public class MenuPrincipal extends MenuAbstract{
 
         User user = this.userBuilder.setLogin(login).setPass(pass).builder();
         if(this.userAccessFactory.singIn(userManager, user).enter()) {
-            if (userManager.checkAdmin(user)) this.menuDashboardAdmin.showDashboardAdmin(user);
+            if (userManager.checkAdmin(user)) this.menuDashboardAdmin.showDashboardAdmin();
             else this.menuDashboardUser.showDashboardUser(user);
         }
         else System.out.println("Login inválido");

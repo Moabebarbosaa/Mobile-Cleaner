@@ -7,6 +7,8 @@ import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
+import br.edu.ifpb.UserBuilder.IUserBuilder;
+import br.edu.ifpb.UserBuilder.UserBuilder;
 
 import java.util.List;
 import java.util.Scanner;
@@ -19,17 +21,18 @@ public class MenuDashboardAdmin extends MenuAbstract{
     UserManager userManager;
     CleanPlaceManager cleanPlaceManager;
     CleanPlaceBuilder cleanPlaceBuilder;
+    IUserBuilder userBuilder;
 
-    public MenuDashboardAdmin(String title, ActionDashboardFactory actionDashboardFactory, UserManager userManager,
-                              CleanPlaceManager cleanPlaceManager, CleanPlaceBuilder cleanPlaceBuilder) {
+    public MenuDashboardAdmin(String title, ActionDashboardFactory actionDashboardFactory, UserManager userManager, CleanPlaceManager cleanPlaceManager, CleanPlaceBuilder cleanPlaceBuilder, IUserBuilder userBuilder) {
         super(title);
         this.actionDashboardFactory = actionDashboardFactory;
         this.userManager = userManager;
         this.cleanPlaceManager = cleanPlaceManager;
         this.cleanPlaceBuilder = cleanPlaceBuilder;
+        this.userBuilder = userBuilder;
     }
 
-    public void showDashboardAdmin(User user) {
+    public void showDashboardAdmin() {
 
         while (true) {
             String menu = "\n\n\n=================================================\n";
@@ -38,7 +41,8 @@ public class MenuDashboardAdmin extends MenuAbstract{
             menu += "2 - Listas de usuarios\n";
             menu += "3 - Listas de usuarios atrasadas com a limpesa\n";
             menu += "4 - Adicionar local de limpesa\n";
-            menu += "5 - Voltar\n";
+            menu += "5 - Adicionar admin\n";
+            menu += "6 - Voltar\n";
             menu += "=================================================\n";
 
             System.out.println(menu);
@@ -56,7 +60,6 @@ public class MenuDashboardAdmin extends MenuAbstract{
                     } else {
                         System.out.println("Erro ao enviar mensagem.");
                     }
-
                     break;
                 case 2:
                     showUsers();
@@ -64,7 +67,6 @@ public class MenuDashboardAdmin extends MenuAbstract{
                 case 3:
                     System.out.println();
                 case 4:
-
                     System.out.println("Nome: ");
                     String name = sc.nextLine();
                     System.out.println("Setor: ");
@@ -76,9 +78,20 @@ public class MenuDashboardAdmin extends MenuAbstract{
                     } else {
                         System.out.println("Erro ao adicionar local.");
                     }
-
                     break;
                 case 5:
+                    String nameAdmin = obterString("Nome: ");
+                    String loginAdmin = obterString("Login: ");
+                    String passAdmin = obterString("Senha: ");
+                    String modelSmartphoneAdmin = obterString("Modelo do celular: ");
+
+                    User user = this.userBuilder.setName(nameAdmin).setLogin(loginAdmin).setPass(passAdmin).setModelSmartphone(modelSmartphoneAdmin).setPermission("admin").builder();
+
+                    if (this.actionDashboardFactory.addAdmin(this.userManager).enter(user)) System.out.println("\n\nCadastrado com sucesso.");
+                    else System.out.println("Falha ao cadastrar.");
+
+                    break;
+                case 6:
                     return;
                 default:
                     System.out.println();

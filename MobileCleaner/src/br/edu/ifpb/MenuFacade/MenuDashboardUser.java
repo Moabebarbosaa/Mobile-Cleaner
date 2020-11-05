@@ -23,7 +23,7 @@ public class MenuDashboardUser extends MenuAbstract{
 
     public void showDashboardUser(User user) {
         while (true) {
-            String menu = "\n\n\n=================================================\n";
+            String menu = "\n=================================================\n";
             menu += this.title + " - MobileCleaner\n\n";
             menu += "1 - Realizar limpesa\n";
             menu += "2 - Verificar data da proxima limpesa\n";
@@ -47,7 +47,8 @@ public class MenuDashboardUser extends MenuAbstract{
                     System.out.println();
                     break;
                 case 2:
-                    System.out.println("");
+                    System.out.println("\nPróxima limpeza agendada para: " + this.actionDashboardFactory.dateNextClean(this.userManager)
+                            .showDateNextClean(user.getLogin()));
                     break;
                 case 3:
                     String message = this.actionDashboardFactory.verifyNotification(this.userManager).show(user);
@@ -73,5 +74,4 @@ public class MenuDashboardUser extends MenuAbstract{
             }
         }
     }
-
 }

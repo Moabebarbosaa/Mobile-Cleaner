@@ -1,8 +1,8 @@
 package br.edu.ifpb.UserBuilder;
 
-import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.UserAccess.UserAccessFactory;
+
 
 public class UserBuilder implements IUserBuilder {
 
@@ -10,6 +10,8 @@ public class UserBuilder implements IUserBuilder {
     private String login;
     private String pass;
     private String modelSmartphone;
+    private String permission;
+
 
     @Override
     public IUserBuilder setName(String name) {
@@ -37,11 +39,16 @@ public class UserBuilder implements IUserBuilder {
         return this;
     }
 
+    @Override
+    public IUserBuilder setPermission(String permission) {
+        this.permission = permission;
+        return this;
+    }
 
     @Override
     public User builder() {
         UserAccessFactory userAccess = new UserAccessFactory();
-        User user = userAccess.createUser(this.name, this.login, this.pass, this.modelSmartphone);
+        User user = userAccess.createUser(this.name, this.login, this.pass, this.modelSmartphone, this.permission);
         return user;
     }
 

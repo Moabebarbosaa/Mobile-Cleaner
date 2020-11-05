@@ -34,7 +34,7 @@ public class Facade {
         this.cleanPlaceManager = new CleanPlaceManager();
         this.userProxy = new UserProxy(this.userManager);
         this.actionDashboardFactory = new ActionDashboardFactory(this.userManager);
-        this.menuDashboardAdmin = new MenuDashboardAdmin("Menu Administrador", this.actionDashboardFactory, this.userManager, this.cleanPlaceManager, this.cleanPlaceBuilder);
+        this.menuDashboardAdmin = new MenuDashboardAdmin("Menu Administrador", this.actionDashboardFactory, this.userManager, this.cleanPlaceManager, this.cleanPlaceBuilder, this.userBuilder);
         this.menuDashboardUser = new MenuDashboardUser("Menu Usuário", this.actionDashboardFactory, this.userManager, this.cleanPlaceManager);
         this.menuPrincipal = new MenuPrincipal("Menu Principal",userBuilder, userAccessFactory, userManager, userProxy, menuDashboardAdmin, menuDashboardUser);
     }
