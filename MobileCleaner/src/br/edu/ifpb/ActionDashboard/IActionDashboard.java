@@ -1,6 +1,6 @@
 package br.edu.ifpb.ActionDashboard;
 
-import br.edu.ifpb.ActionDashboard.CleaningTipsStrategy.CleaningTips;
+import br.edu.ifpb.ActionDashboard.CleaningTipsStrategy.CleaningTipsStrategy;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.UserManager;
 
@@ -24,6 +24,6 @@ public interface IActionDashboard {
 
     public AddAdmin addAdmin(UserManager userManager);
 
-    public CleaningTips cleaningTips(String modelSmartphone);
+    public CleaningTipsStrategy cleaningTips(String modelSmartphone);
 
 }

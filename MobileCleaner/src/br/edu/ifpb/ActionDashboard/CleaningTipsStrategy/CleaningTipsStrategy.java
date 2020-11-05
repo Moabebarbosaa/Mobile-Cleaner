@@ -1,12 +1,12 @@
 package br.edu.ifpb.ActionDashboard.CleaningTipsStrategy;
 
 
-public class CleaningTips {
+public class CleaningTipsStrategy {
 
     private String tips;
     private ICleaningTips showTips;
 
-    public CleaningTips(String modelSmartphone) {
+    public CleaningTipsStrategy(String modelSmartphone) {
 
         switch (modelSmartphone) {
             case "IPHONE":
