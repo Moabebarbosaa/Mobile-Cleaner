@@ -13,18 +13,13 @@ public class UserAccessFactory implements IUserAccessFactory {
     }
 
     @Override
-    public IUser createUser(String login, String pass) {
-        return new User(login, pass);
-    }
-
-    @Override
-    public SingIn singIn(UserManager userManager, IUser user) {
+    public SingIn singIn(UserManager userManager, User user) {
         return new SingIn(userManager, user);
     }
 
 
     @Override
-    public SingUp singUp(IUser user, UserProxy userProxy) {
+    public SingUp singUp(User user, UserProxy userProxy) {
         return new SingUp(user, userProxy);
     }
 

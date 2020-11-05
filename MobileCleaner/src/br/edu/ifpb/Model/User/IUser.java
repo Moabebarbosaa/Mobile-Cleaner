@@ -1,39 +1,17 @@
 package br.edu.ifpb.Model.User;
 
-import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public interface IUser {
 
-    public Integer getId();
+    public String setPermission();
 
-    public void setId(Integer id);
+    public String setNotification();
 
-    public String getDateSingUp();
+    public String setDateSingUp();
 
-    public void setDateSingUp(String dateSingUp);
-
-    public String getName();
-
-    public void setName(String name);
-
-    public String getLogin();
-
-    public void setLogin(String login);
-
-    public String getPass();
-
-    public void setPass(String pass);
-
-    public String getPermission();
-
-    public void setPermission(String permission);
-
-    public String getNotification();
-
-    public void setNotification(String notification);
-
-    public String getModelSmartphone();
-
-    public void setModelSmartphone(String modelSmartphone);
+    public String setDateNextClean(String date, int days);
 
 }

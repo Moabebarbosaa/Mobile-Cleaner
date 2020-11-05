@@ -1,9 +1,9 @@
 package br.edu.ifpb.Model.User;
 
 
-public class User implements IUser{
+public class User {
 
-    private int id;
+    private Integer id;
     private String name;
     private String login;
     private String pass;
@@ -29,84 +29,79 @@ public class User implements IUser{
     }
 
 
-    @Override
     public Integer getId() {
         return id;
     }
 
-    @Override
     public void setId(Integer id) {
         this.id = id;
     }
 
-    @Override
-    public String getDateSingUp() {
-        return dateSingUp;
-    }
-
-    @Override
-    public void setDateSingUp(String dateSingUp) {
-        this.dateSingUp = dateSingUp;
-    }
-
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
     public String getLogin() {
         return login;
     }
 
-    @Override
     public void setLogin(String login) {
         this.login = login;
     }
 
-    @Override
     public String getPass() {
         return pass;
     }
 
-    @Override
     public void setPass(String pass) {
         this.pass = pass;
     }
 
-    @Override
     public String getPermission() {
         return permission;
     }
 
-    @Override
-    public void setPermission(String permission) {
-        this.permission = permission;
-    }
-
-    @Override
     public String getNotification() {
         return notification;
     }
 
-    @Override
-    public void setNotification(String notification) {
-        this.notification = notification;
-    }
 
-    @Override
     public String getModelSmartphone() {
         return modelSmartphone;
     }
 
-    @Override
     public void setModelSmartphone(String modelSmartphone) {
         this.modelSmartphone = modelSmartphone;
+    }
+
+    public String getDateSingUp() {
+        return dateSingUp;
+    }
+
+
+    public String getDateNextClean() {
+        return dateNextClean;
+    }
+
+
+    public void setPermission(String permission) {
+        this.permission = permission;
+    }
+
+    public void setNotification(String notification) {
+        this.notification = notification;
+    }
+
+    public void setDateSingUp(String dateSingUp) {
+        this.dateSingUp = dateSingUp;
+    }
+
+    public void setDateNextClean(String dateNextClean) {
+        this.dateNextClean = dateNextClean;
     }
 
     @Override

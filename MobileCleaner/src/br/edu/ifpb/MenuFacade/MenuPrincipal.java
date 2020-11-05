@@ -7,6 +7,8 @@ import br.edu.ifpb.Model.User.UserProxy;
 import br.edu.ifpb.UserAccess.IUserAccessFactory;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 
+import java.text.ParseException;
+
 
 public class MenuPrincipal extends MenuAbstract{
 
@@ -27,7 +29,7 @@ public class MenuPrincipal extends MenuAbstract{
         this.menuDashboardUser = menuDashboardUser;
     }
 
-    public void exibirMenu() {
+    public void exibirMenu() throws ParseException {
         String menu = "===============================\n";
         menu += this.title + " - MobileCleaner\n\n";
         menu += "1 - Cadastrar\n";
@@ -64,13 +66,13 @@ public class MenuPrincipal extends MenuAbstract{
     }
 
 
-    private void singUp() {
+    private void singUp() throws ParseException {
         String name = obterString("Nome: ");
         String login = obterString("Login: ");
         String pass = obterString("Senha: ");
         String modelSmartphone = obterString("Modelo do celular: ");
 
-        IUser user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
+        User user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
         if (this.userAccessFactory.singUp(user, this.userProxy).register()) System.out.println("Cadastrado com sucesso.");
         else System.out.println("Falha ao cadastrar.");
     }
@@ -80,7 +82,7 @@ public class MenuPrincipal extends MenuAbstract{
         String login = obterString("Login: ");
         String pass = obterString("Senha: ");
 
-        IUser user = this.userBuilder.setLogin(login).setPass(pass).builder();
+        User user = this.userBuilder.setLogin(login).setPass(pass).builder();
         if(this.userAccessFactory.singIn(userManager, user).enter()) {
             if (userManager.checkAdmin(user)) this.menuDashboardAdmin.showDashboardAdmin(user);
             else this.menuDashboardUser.showDashboardUser(user);

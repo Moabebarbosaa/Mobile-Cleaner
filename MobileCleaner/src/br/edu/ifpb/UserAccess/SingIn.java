@@ -8,9 +8,9 @@ import br.edu.ifpb.Model.User.UserManager;
 public class SingIn {
 
     UserManager userManager;
-    private IUser user;
+    private User user;
 
-    public SingIn(UserManager userManager, IUser user) {
+    public SingIn(UserManager userManager, User user) {
         this.userManager = userManager;
         this.user = user;
     }

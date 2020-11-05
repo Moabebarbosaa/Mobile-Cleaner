@@ -29,7 +29,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
         this.cleanPlaceBuilder = cleanPlaceBuilder;
     }
 
-    public void showDashboardAdmin(IUser user) {
+    public void showDashboardAdmin(User user) {
 
         while (true) {
             String menu = "\n\n\n=================================================\n";
@@ -92,9 +92,9 @@ public class MenuDashboardAdmin extends MenuAbstract{
     }
 
     private void showUsers() {
-        List<IUser> list = this.actionDashboardFactory.showUserList(this.userManager).show();
+        List<User> list = this.actionDashboardFactory.showUserList(this.userManager).show();
 
-        for (IUser user: list) {
+        for (User user: list) {
             System.out.println(user.toString());
         }
     }

@@ -10,6 +10,8 @@ import br.edu.ifpb.UserAccess.UserAccessFactory;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 import br.edu.ifpb.UserBuilder.UserBuilder;
 
+import java.text.ParseException;
+
 
 public class Facade {
 
@@ -37,7 +39,7 @@ public class Facade {
         this.menuPrincipal = new MenuPrincipal("Menu Principal",userBuilder, userAccessFactory, userManager, userProxy, menuDashboardAdmin, menuDashboardUser);
     }
 
-    public void exibirMenu() {
+    public void exibirMenu() throws ParseException {
         this.menuPrincipal.exibirMenu();
     }
 

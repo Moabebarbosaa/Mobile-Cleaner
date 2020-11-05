@@ -7,12 +7,10 @@ import br.edu.ifpb.Model.User.UserProxy;
 
 public interface IUserAccessFactory {
 
-    public IUser createUser(String name, String login, String pass, String modelSmartphone);
+    public User createUser(String name, String login, String pass, String modelSmartphone);
 
-    public IUser createUser(String login, String pass);
+    public SingIn singIn(UserManager userManager, User user);
 
-    public SingIn singIn(UserManager userManager, IUser user);
-
-    public SingUp singUp(IUser user, UserProxy userProxy);
+    public SingUp singUp(User user, UserProxy userProxy);
 
 }

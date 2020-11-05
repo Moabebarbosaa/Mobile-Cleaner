@@ -14,7 +14,7 @@ public class UserList {
         this.userManager = userManager;
     }
 
-    public List<IUser> show(){
+    public List<User> show(){
         return this.userManager.getListUser();
     }
 

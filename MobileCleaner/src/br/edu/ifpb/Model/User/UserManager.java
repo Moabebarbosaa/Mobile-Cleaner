@@ -16,7 +16,8 @@ public class UserManager {
         this.connection = new ConnectionFactory().getConnection();
     }
 
-    public Boolean addUser(IUser user) {
+    public Boolean addUser(User user) {
+
         String sql = "INSERT INTO users(" +
                 "name, " +
                 "login, " +
@@ -24,7 +25,8 @@ public class UserManager {
                 "permission, " +
                 "notification, " +
                 "modelSmartphone, " +
-                "dateSingUp) VALUES(?, ?, ?, ?, ?, ?, ?)";
+                "dateSingUp, " +
+                "dateNextClean) VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, user.getName());
@@ -34,6 +36,7 @@ public class UserManager {
             preparedStatement.setString(5, user.getNotification());
             preparedStatement.setString(6, user.getModelSmartphone());
             preparedStatement.setString(7, user.getDateSingUp());
+            preparedStatement.setString(8, user.getDateNextClean());
             preparedStatement.executeUpdate();
             preparedStatement.close();
             return true;
@@ -43,7 +46,7 @@ public class UserManager {
         }
     }
 
-    public boolean verifyUser(IUser user) {
+    public boolean verifyUser(User user) {
 
         ResultSet resultSet = null;
 
@@ -75,7 +78,7 @@ public class UserManager {
         }
     }
 
-    public boolean checkAdmin(IUser user) {
+    public boolean checkAdmin(User user) {
         ResultSet resultSet = null;
 
         String sql = "SELECT permission"
@@ -104,11 +107,11 @@ public class UserManager {
     }
 
 
-    public List<IUser> getListUser(){
-        List<IUser> list = new ArrayList<>();
+    public List<User> getListUser(){
+        List<User> list = new ArrayList<>();
 
         ResultSet resultSet = null;
-        IUser user = new User();
+        User user = new User();
 
         String sql = "SELECT * FROM users";
 
@@ -126,7 +129,6 @@ public class UserManager {
                 user.setPermission(resultSet.getString(5));
                 user.setNotification(resultSet.getString(6));
                 user.setModelSmartphone(resultSet.getString(7));
-                user.setDateSingUp(resultSet.getString(8));
                 list.add(user);
             }
         } catch (SQLException e){
@@ -157,7 +159,7 @@ public class UserManager {
     }
 
 
-    public String verify(IUser user) {
+    public String verify(User user) {
 
         String sql = "SELECT * FROM users WHERE login = '" + user.getLogin() + "'";
 

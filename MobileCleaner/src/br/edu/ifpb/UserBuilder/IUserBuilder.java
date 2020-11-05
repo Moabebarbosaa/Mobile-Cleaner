@@ -11,6 +11,6 @@ public interface IUserBuilder {
     public IUserBuilder setModelSmartphone(String modelSmartphone);
 
 
-    public IUser builder();
+    public User builder();
 
 }

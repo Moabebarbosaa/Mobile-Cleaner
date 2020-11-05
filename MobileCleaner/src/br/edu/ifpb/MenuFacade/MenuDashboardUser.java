@@ -22,7 +22,7 @@ public class MenuDashboardUser extends MenuAbstract{
         this.cleanPlaceManager = cleanPlaceManager;
     }
 
-    public void showDashboardUser(IUser user) {
+    public void showDashboardUser(User user) {
         while (true) {
             String menu = "\n\n\n=================================================\n";
             menu += this.title + " - MobileCleaner\n\n";

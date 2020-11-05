@@ -39,9 +39,9 @@ public class UserBuilder implements IUserBuilder {
 
 
     @Override
-    public IUser builder() {
+    public User builder() {
         UserAccessFactory userAccess = new UserAccessFactory();
-        IUser user = userAccess.createUser(this.name, this.login, this.pass, this.modelSmartphone);
+        User user = userAccess.createUser(this.name, this.login, this.pass, this.modelSmartphone);
         return user;
     }
 

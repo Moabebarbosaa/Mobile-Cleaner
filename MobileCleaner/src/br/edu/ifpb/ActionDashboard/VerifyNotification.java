@@ -12,7 +12,7 @@ public class VerifyNotification {
         this.userManager = userManager;
     }
 
-    public String show(IUser user) {
+    public String show(User user) {
         return this.userManager.verify(user);
     }
 
