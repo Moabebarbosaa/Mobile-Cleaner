@@ -29,7 +29,7 @@ public class MenuDashboardUser extends MenuAbstract{
             menu += "2 - Verificar data da proxima limpesa\n";
             menu += "3 - Verificar notificações\n";
             menu += "4 - Locais para limpesa\n";
-            menu += "5 - Histórico de limpesa\n";
+            menu += "5 - Dicas de limpesa\n";
             menu += "6 - Voltar\n";
             menu += "=================================================\n";
 
@@ -61,8 +61,8 @@ public class MenuDashboardUser extends MenuAbstract{
                     }
                     break;
                 case 5:
-
-                    System.out.println();
+                    String modelSmartphone = this.userManager.getModelSmartphone(user.getLogin());
+                    System.out.println("\n" + this.actionDashboardFactory.cleaningTips(modelSmartphone).showTipsStrategy() + "\n");
                     break;
                 case 6:
                     return;

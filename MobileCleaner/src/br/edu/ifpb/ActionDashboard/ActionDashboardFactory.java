@@ -1,5 +1,6 @@
 package br.edu.ifpb.ActionDashboard;
 
+import br.edu.ifpb.ActionDashboard.CleaningTipsStrategy.CleaningTips;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.UserManager;
 
@@ -54,5 +55,10 @@ public class ActionDashboardFactory implements IActionDashboard{
     @Override
     public AddAdmin addAdmin(UserManager userManager) {
         return new AddAdmin(this.userManager);
+    }
+
+    @Override
+    public CleaningTips cleaningTips(String modelSmartphone) {
+        return new CleaningTips(modelSmartphone);
     }
 }

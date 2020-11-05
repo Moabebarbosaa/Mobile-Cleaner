@@ -264,4 +264,30 @@ public class UserManager {
 
     }
 
+    public String getModelSmartphone(String login) {
+
+        ResultSet resultSet = null;
+
+        String sql = "SELECT modelSmartphone FROM users WHERE login = '" + login + "'";
+
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                return resultSet.getString(1);
+            } else {
+                return "";
+            }
+        } catch (SQLException u) {
+            u.printStackTrace();
+            return "";
+        } finally {
+            try {
+                resultSet.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+    }
 }
