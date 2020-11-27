@@ -4,7 +4,7 @@ import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 import br.edu.ifpb.Model.User.UserProxy;
 
-public interface IUserAccessFactory {
+public interface IUserAccess {
 
     public User createUser(String name, String login, String pass, String modelSmartphone, String permission);
 

@@ -1,8 +1,7 @@
 package br.edu.ifpb.Model.CleanPlace;
 
-import br.edu.ifpb.ConnectionDB.ConnectionFactory;
+import br.edu.ifpb.ConnectionDB.Connection;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,10 +10,10 @@ import java.util.List;
 
 public class CleanPlaceManager {
 
-    private final Connection connection;
+    private final java.sql.Connection connection;
 
     public CleanPlaceManager() {
-        this.connection = new ConnectionFactory().getConnection();
+        this.connection = Connection.getInstance().getConnection();
     }
 
 

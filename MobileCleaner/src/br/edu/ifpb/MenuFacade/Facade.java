@@ -5,18 +5,17 @@ import br.edu.ifpb.CleanPlaceBuilder.CleanPlaceBuilder;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.UserManager;
 import br.edu.ifpb.Model.User.UserProxy;
-import br.edu.ifpb.UserAccess.IUserAccessFactory;
-import br.edu.ifpb.UserAccess.UserAccessFactory;
+import br.edu.ifpb.UserAccess.IUserAccess;
+import br.edu.ifpb.UserAccess.UserAccess;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 import br.edu.ifpb.UserBuilder.UserBuilder;
 
 import java.text.ParseException;
 
-
 public class Facade {
 
     IUserBuilder userBuilder;
-    IUserAccessFactory userAccessFactory;
+    IUserAccess userAccessFactory;
     UserManager userManager;
     UserProxy userProxy;
     MenuPrincipal menuPrincipal;
@@ -29,7 +28,7 @@ public class Facade {
     public Facade() {
         this.userBuilder = new UserBuilder();
         this.cleanPlaceBuilder = new CleanPlaceBuilder();
-        this.userAccessFactory = new UserAccessFactory();
+        this.userAccessFactory = new UserAccess();
         this.userManager = new UserManager();
         this.cleanPlaceManager = new CleanPlaceManager();
         this.userProxy = new UserProxy(this.userManager);

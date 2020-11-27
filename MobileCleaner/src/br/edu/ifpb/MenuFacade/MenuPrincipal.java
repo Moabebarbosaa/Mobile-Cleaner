@@ -1,10 +1,9 @@
 package br.edu.ifpb.MenuFacade;
 
-import br.edu.ifpb.Model.User.IUser;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 import br.edu.ifpb.Model.User.UserProxy;
-import br.edu.ifpb.UserAccess.IUserAccessFactory;
+import br.edu.ifpb.UserAccess.IUserAccess;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 
 import java.text.ParseException;
@@ -13,13 +12,13 @@ import java.text.ParseException;
 public class MenuPrincipal extends MenuAbstract{
 
     IUserBuilder userBuilder;
-    IUserAccessFactory userAccessFactory;
+    IUserAccess userAccessFactory;
     UserManager userManager;
     UserProxy userProxy;
     MenuDashboardAdmin menuDashboardAdmin;
     MenuDashboardUser menuDashboardUser;
 
-    public MenuPrincipal(String title, IUserBuilder userBuilder, IUserAccessFactory userAccessFactory, UserManager userManager, UserProxy userProxy, MenuDashboardAdmin menuDashboardAdmin, MenuDashboardUser menuDashboardUser) {
+    public MenuPrincipal(String title, IUserBuilder userBuilder, IUserAccess userAccessFactory, UserManager userManager, UserProxy userProxy, MenuDashboardAdmin menuDashboardAdmin, MenuDashboardUser menuDashboardUser) {
         super(title);
         this.userBuilder = userBuilder;
         this.userAccessFactory = userAccessFactory;
