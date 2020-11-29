@@ -1,4 +1,4 @@
-package br.edu.ifpb.ConnectionDB;
+package br.edu.ifpb.ConnectionDBSingleton;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;

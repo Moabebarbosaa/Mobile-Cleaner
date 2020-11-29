@@ -1,5 +1,5 @@
 package br.edu.ifpb.Model.User;
-import br.edu.ifpb.ConnectionDB.Connection;
+import br.edu.ifpb.ConnectionDBSingleton.Connection;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
