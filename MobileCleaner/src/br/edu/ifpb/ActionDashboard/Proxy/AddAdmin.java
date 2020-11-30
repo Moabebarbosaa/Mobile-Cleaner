@@ -1,11 +1,11 @@
-package br.edu.ifpb.ActionDashboard;
+package br.edu.ifpb.ActionDashboard.Proxy;
 
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
 public class AddAdmin {
 
-    UserManager userManager;
+    private UserManager userManager;
 
     public AddAdmin(UserManager userManager) {
         this.userManager = userManager;

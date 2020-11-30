@@ -1,5 +1,6 @@
 package br.edu.ifpb.MenuFacade;
 
+import br.edu.ifpb.ActionDashboard.Proxy.AddAdminProxy;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 import br.edu.ifpb.Model.User.UserProxy;
@@ -44,8 +45,24 @@ public class MenuPrincipal extends MenuAbstract{
 
             switch (chosenOption) {
                 case 1:
-                    singUp();
-                    System.out.println();
+                    while (true) {
+                        System.out.println("\n\n========== CADASTRO ==========\n");
+                        System.out.println("1 - Cadastrar Admin");
+                        System.out.println("2 - Cadastrar User\n");
+                        Integer Option = obterInteger("Digite uma opção: ");
+
+                        if (Option == 1) {
+                            singUpAdmin();
+                            break;
+                        } else if (Option == 2){
+                            singUp();
+                            break;
+                        } else {
+                            System.out.println("Opção inválida.");
+                        }
+                        System.out.println();
+
+                    }
                     break;
                 case 2:
                     singIn();
@@ -62,6 +79,19 @@ public class MenuPrincipal extends MenuAbstract{
             }
 
         }
+    }
+
+    private void singUpAdmin() {
+        String cod = obterString("Código para adicionar ADMIN: ");
+        String name = obterString("Nome: ");
+        String login = obterString("Login: ");
+        String pass = obterString("Senha: ");
+        String modelSmartphone = obterString("Modelo do celular: ");
+
+        User user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
+        AddAdminProxy addAdmin = new AddAdminProxy(this.userManager, cod);
+        if (addAdmin.enter(user)) System.out.println("Admin adicionado com sucesso!");
+        else System.out.println("\nCódigo para adicionar usuário errado.");
     }
 
 

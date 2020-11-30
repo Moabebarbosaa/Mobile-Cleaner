@@ -1,11 +1,9 @@
 package br.edu.ifpb.ActionDashboard;
 
 import br.edu.ifpb.ActionDashboard.CleaningTipsStrategy.CleaningTipsStrategy;
+import br.edu.ifpb.ActionDashboard.Proxy.AddAdmin;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
-import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
-
-import java.util.List;
 
 public class ActionDashboard implements IActionDashboard{
 
