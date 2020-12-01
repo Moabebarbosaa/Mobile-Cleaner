@@ -9,7 +9,6 @@ import br.edu.ifpb.UserBuilder.IUserBuilder;
 
 import java.text.ParseException;
 
-
 public class MenuPrincipal extends MenuAbstract{
 
     IUserBuilder userBuilder;

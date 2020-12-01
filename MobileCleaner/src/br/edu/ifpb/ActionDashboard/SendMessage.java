@@ -6,12 +6,12 @@ public class SendMessage {
 
     UserManager userManager;
 
-
     public SendMessage(UserManager userManager) {
         this.userManager = userManager;
     }
 
     public boolean send(String login, String message) {
-        return this.userManager.sendMenssage(login, message);
+        FacadeSendMessage facadeSendMessage = new FacadeSendMessage(this.userManager);
+        return facadeSendMessage.sendMessages(login, message);
     }
 }

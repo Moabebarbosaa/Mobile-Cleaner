@@ -158,6 +158,7 @@ public class UserManager {
         String sql = "UPDATE users SET notification = '" + message + "' WHERE login = " + "'" + login + "'";
 
         try {
+
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.executeUpdate();
             preparedStatement.close();
