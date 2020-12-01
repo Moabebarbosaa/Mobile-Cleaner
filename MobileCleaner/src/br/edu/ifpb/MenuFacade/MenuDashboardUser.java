@@ -25,11 +25,11 @@ public class MenuDashboardUser extends MenuAbstract{
         while (true) {
             String menu = "\n=================================================\n";
             menu += this.title + " - MobileCleaner\n\n";
-            menu += "1 - Realizar limpesa\n";
-            menu += "2 - Verificar data da proxima limpesa\n";
+            menu += "1 - Realizar limpeza\n";
+            menu += "2 - Verificar data da proxima limpeza\n";
             menu += "3 - Verificar notificações\n";
-            menu += "4 - Locais para limpesa\n";
-            menu += "5 - Dicas de limpesa\n";
+            menu += "4 - Locais para limpeza\n";
+            menu += "5 - Dicas de limpeza\n";
             menu += "6 - Voltar\n";
             menu += "=================================================\n";
 

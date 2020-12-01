@@ -22,6 +22,7 @@ public abstract class MenuAbstract {
             System.out.print(mensagem);
             line = sc.next();
         }
+
         return line;
     }
 

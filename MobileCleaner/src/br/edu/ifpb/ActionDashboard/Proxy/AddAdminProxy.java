@@ -17,6 +17,7 @@ public class AddAdminProxy  extends AddAdmin{
     @Override
     public boolean enter(User user) {
         if (temPermissao()){
+            user.setPermission("admin");
             return super.enter(user);
         } else {
             return false;

@@ -1,6 +1,10 @@
 package br.edu.ifpb.MenuFacade;
 
 import br.edu.ifpb.ActionDashboard.Proxy.AddAdminProxy;
+import br.edu.ifpb.MenuFacade.ChainOfResponsability.IChain;
+import br.edu.ifpb.MenuFacade.ChainOfResponsability.SignUpLeaf;
+import br.edu.ifpb.MenuFacade.ChainOfResponsability.UserExists;
+import br.edu.ifpb.MenuFacade.ChainOfResponsability.ValidationFields;
 import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 import br.edu.ifpb.Model.User.UserProxy;
@@ -8,6 +12,7 @@ import br.edu.ifpb.UserAccess.IUserAccess;
 import br.edu.ifpb.UserBuilder.IUserBuilder;
 
 import java.text.ParseException;
+import java.util.Scanner;
 
 public class MenuPrincipal extends MenuAbstract{
 
@@ -17,6 +22,8 @@ public class MenuPrincipal extends MenuAbstract{
     UserProxy userProxy;
     MenuDashboardAdmin menuDashboardAdmin;
     MenuDashboardUser menuDashboardUser;
+
+    private Scanner sc = new Scanner(System.in);
 
     public MenuPrincipal(String title, IUserBuilder userBuilder, IUserAccess userAccessFactory, UserManager userManager, UserProxy userProxy, MenuDashboardAdmin menuDashboardAdmin, MenuDashboardUser menuDashboardUser) {
         super(title);
@@ -95,15 +102,34 @@ public class MenuPrincipal extends MenuAbstract{
 
 
     private void singUp() throws ParseException {
-        String name = obterString("Nome: ");
-        String login = obterString("Login: ");
-        String pass = obterString("Senha: ");
-        String modelSmartphone = obterString("Modelo do celular: ");
+        System.out.print("Nome: ");
+        String name = sc.nextLine();
+        System.out.print("Login: ");
+        String login = sc.nextLine();
+        System.out.print("Senha: ");
+        String pass = sc.nextLine();
+        System.out.print("Modelo do celular: ");
+        String modelSmartphone = sc.nextLine();
 
         User user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
+
+        //chain
+        IChain validationFields = new ValidationFields(user);
+        IChain userExists = new UserExists();
+        IChain signUpLeaf = new SignUpLeaf();
+
+        validationFields.next(userExists);
+        userExists.next(signUpLeaf);
+
+        boolean res = validationFields.go();
+
+        if (res == false) signUp();
+
         if (this.userAccessFactory.singUp(user, this.userProxy).register()) System.out.println("Cadastrado com sucesso.");
         else System.out.println("Falha ao cadastrar.");
     }
+
+
 
 
     private void singIn() throws ParseException {

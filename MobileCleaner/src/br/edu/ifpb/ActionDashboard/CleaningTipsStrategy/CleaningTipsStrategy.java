@@ -1,7 +1,7 @@
 package br.edu.ifpb.ActionDashboard.CleaningTipsStrategy;
 
 
-public class CleaningTipsStrategy {
+public class CleaningTipsStrategy{
 
     private String tips;
     private ICleaningTips showTips;

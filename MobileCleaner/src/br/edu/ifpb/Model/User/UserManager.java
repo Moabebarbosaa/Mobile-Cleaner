@@ -130,7 +130,12 @@ public class UserManager {
                 user.setName(resultSet.getString(2));
                 user.setLogin(resultSet.getString(3));
                 user.setPass(resultSet.getString(4));
-                user.setPermission(resultSet.getString(5));
+                if (resultSet.getString(5) == null){
+                    user.setPermission("");
+                } else {
+                    user.setPermission(resultSet.getString(5));
+                }
+
                 user.setNotification(resultSet.getString(6));
                 user.setModelSmartphone(resultSet.getString(7));
                 user.setDateNextClean(resultSet.getString(8));

@@ -40,8 +40,8 @@ public class MenuDashboardAdmin extends MenuAbstract{
             menu += this.title + " - MobileCleaner\n\n";
             menu += "1 - Enviar mensagem para um usuario\n";
             menu += "2 - Listas de usuarios\n";
-            menu += "3 - Listas de usuarios atrasadas com a limpesa\n";
-            menu += "4 - Adicionar local de limpesa\n";
+            menu += "3 - Listas de usuarios atrasadas com a limpeza\n";
+            menu += "4 - Adicionar local de limpeza\n";
             menu += "5 - Adicionar admin\n";
             menu += "6 - Voltar\n";
             menu += "=================================================\n";
