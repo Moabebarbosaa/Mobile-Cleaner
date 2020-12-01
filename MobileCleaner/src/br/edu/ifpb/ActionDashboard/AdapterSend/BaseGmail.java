@@ -7,9 +7,10 @@ public class BaseGmail {
 
         String output = "";
 
-        output += "Email do Google enviado!\n\n";
+        output += "\nEmail do Google enviado!\n";
         output += "\nLogin: " + login;
         output += "\nMensagem: " + message;
+        output += "\n";
 
         return output;
     }

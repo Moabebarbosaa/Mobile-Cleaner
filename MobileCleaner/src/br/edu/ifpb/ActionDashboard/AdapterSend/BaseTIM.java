@@ -7,9 +7,10 @@ public class BaseTIM {
 
         String output = "";
 
-        output += "SMS enviado!\n\n";
+        output += "\nSMS enviado!\n";
         output += "\nLogin: " + login;
         output += "\nMensagem: " + message;
+        output += "\n";
 
         return output;
     }
