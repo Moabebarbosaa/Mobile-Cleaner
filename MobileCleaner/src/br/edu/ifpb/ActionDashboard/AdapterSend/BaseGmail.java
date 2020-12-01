@@ -2,6 +2,7 @@ package br.edu.ifpb.ActionDashboard.AdapterSend;
 
 public class BaseGmail {
 
+    // Simular API
     public String textsGmail(String login, String message){
 
         String output = "";
