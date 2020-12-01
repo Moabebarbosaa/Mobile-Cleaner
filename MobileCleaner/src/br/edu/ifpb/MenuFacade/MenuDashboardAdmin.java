@@ -1,6 +1,8 @@
 package br.edu.ifpb.MenuFacade;
 
 import br.edu.ifpb.ActionDashboard.ActionDashboard;
+import br.edu.ifpb.ActionDashboard.Iterator.IteratorList;
+import br.edu.ifpb.ActionDashboard.Iterator.ListUsers;
 import br.edu.ifpb.CleanPlaceBuilder.CleanPlaceBuilder;
 import br.edu.ifpb.Model.CleanPlace.CleanPlace;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
@@ -112,7 +114,10 @@ public class MenuDashboardAdmin extends MenuAbstract{
     private void showUsers() {
         List<User> list = this.actionDashboard.showUserList(this.userManager).show();
 
-        for (User user: list) {
+        IteratorList listUsers = new ListUsers(list);
+
+        while (listUsers.hasNext()) {
+            User user = (User)listUsers.next();
             System.out.println(user.toString());
         }
     }
