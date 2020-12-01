@@ -123,7 +123,7 @@ public class MenuPrincipal extends MenuAbstract{
 
         boolean res = validationFields.go();
 
-        if (res == false) signUp();
+        if (res == false) singUp();
 
         if (this.userAccessFactory.singUp(user, this.userProxy).register()) System.out.println("Cadastrado com sucesso.");
         else System.out.println("Falha ao cadastrar.");
