@@ -111,8 +111,13 @@ public class MenuDashboardAdmin extends MenuAbstract{
 
     }
 
-    private void showUsers() {
+    public List<User> showSystemUsers(){
         List<User> list = this.actionDashboard.showUserList(this.userManager).show();
+        return list;
+    }
+
+    private void showUsers() {
+        List<User> list = showSystemUsers();
 
         IteratorList listUsers = new ListUsers(list);
 

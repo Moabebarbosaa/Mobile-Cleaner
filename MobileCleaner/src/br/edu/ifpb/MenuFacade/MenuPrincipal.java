@@ -102,7 +102,7 @@ public class MenuPrincipal extends MenuAbstract{
 
 
     private void singUp() throws ParseException {
-        System.out.print("Nome: ");
+        System.out.print("\nNome: ");
         String name = sc.nextLine();
         System.out.print("Login: ");
         String login = sc.nextLine();
@@ -115,7 +115,7 @@ public class MenuPrincipal extends MenuAbstract{
 
         //chain
         IChain validationFields = new ValidationFields(user);
-        IChain userExists = new UserExists();
+        IChain userExists = new UserExists(this.menuDashboardAdmin.showSystemUsers(), user);
         IChain signUpLeaf = new SignUpLeaf();
 
         validationFields.next(userExists);
@@ -123,14 +123,15 @@ public class MenuPrincipal extends MenuAbstract{
 
         boolean res = validationFields.go();
 
-        if (res == false) singUp();
+        if (res == false) {
+            System.out.println("Erro ao realizar cadastro. Informe os dados novamente, por favor.");
+            singUp();
+        } else {
+            if (this.userAccessFactory.singUp(user, this.userProxy).register()) System.out.println("Cadastrado com sucesso.");
+            else System.out.println("Falha ao cadastrar.");
+        }
 
-        if (this.userAccessFactory.singUp(user, this.userProxy).register()) System.out.println("Cadastrado com sucesso.");
-        else System.out.println("Falha ao cadastrar.");
     }
-
-
-
 
     private void singIn() throws ParseException {
         String login = obterString("Login: ");
