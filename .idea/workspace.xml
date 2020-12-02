@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb765663-f9d8-4dac-8dbf-4a43521fb0c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobile-Cleaner.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/Database/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/MobileCleaner.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/ActionDashboardFacade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/AdapterSend/BaseGmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/AdapterSend/BaseTIM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/AdapterSend/ClassAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/AdapterSend/Gmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/AdapterSend/IAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/AdapterSend/Tim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/AddCleanPlace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/CleanUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/CleaningTipsStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/ICleaningTips.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/IphoneTips.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/MotoGTips.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/XiaomiTips.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/DateNextClean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/FacadeSendMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/IActionDashboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/Iterator/IteratorList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/Iterator/ListUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/ListUserBehind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/PlacesClean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/Proxy/AddAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/Proxy/AddAdminProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/SendMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/UserList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ActionDashboard/VerifyNotification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/CleanPlaceBuilder/CleanPlaceBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/CleanPlaceBuilder/ICleanPlaceBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/ConnectionDBSingleton/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/ChainOfResponsability/IChain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/ChainOfResponsability/SignUpLeaf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/ChainOfResponsability/UserExists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/ChainOfResponsability/ValidationFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/Facade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/MenuAbstract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/MenuDashboardAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/MenuDashboardUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/MenuFacade/MenuPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Model/CleanPlace/CleanPlace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Model/CleanPlace/CleanPlaceManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Model/User/IUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Model/User/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Model/User/UserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/Model/User/UserProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/UserAccess/IUserAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/UserAccess/SingIn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/UserAccess/SingUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/UserAccess/UserAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/UserBuilder/IUserBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MobileCleaner/src/br/edu/ifpb/UserBuilder/UserBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/ActionDashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/AdapterSend/BaseGmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/AdapterSend/BaseTIM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/AdapterSend/ClassAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/AdapterSend/Gmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/AdapterSend/IAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/AdapterSend/Tim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/AddCleanPlace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/CleanUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/CleaningTipsStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/ICleaningTips.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/IphoneTips.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/MotoGTips.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/CleaningTipsStrategy/XiaomiTips.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/DateNextClean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/FacadeSendMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/IActionDashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/Iterator/IteratorList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/Iterator/ListUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/ListUserBehind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/PlacesClean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/Proxy/AddAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/Proxy/AddAdminProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/SendMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/UserList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ActionDashboard/VerifyNotification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/CleanPlaceBuilder/CleanPlaceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/CleanPlaceBuilder/ICleanPlaceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ConnectionDBSingleton/Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/ConnectionDBSingleton/IConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/ChainOfResponsability/IChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/ChainOfResponsability/SignUpLeaf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/ChainOfResponsability/UserExists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/ChainOfResponsability/ValidationFields.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/Facade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/MenuAbstract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/MenuDashboardAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/MenuDashboardUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/MenuFacade/MenuPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/Model/CleanPlace/CleanPlace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/Model/CleanPlace/CleanPlaceManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/Model/User/IUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/Model/User/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/Model/User/UserManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/Model/User/UserProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/UserAccess/IUserAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/UserAccess/SingIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/UserAccess/SingUp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/UserAccess/UserAccess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/UserBuilder/IUserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile-Cleaner/br/edu/ifpb/UserBuilder/UserBuilder.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="D:/SQLiteJAR/sqlite-jdbc-3.7.2.jar" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.edu.ifpb.Main" />
+      <module name="Mobile-Cleaner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.edu.ifpb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="364" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606938454389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="364" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606938454389" />
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606938668637">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606938668637" />
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1606942791544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606942791544" />
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1606937640781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606937640781" />
+    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1606937640781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606937640781" />
+    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1606937640780">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606937640780" />
+    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1606937640781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="234" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606937640781" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1606938544132">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606938544132" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606942169388">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1600.0.1600.860@0.0.1920.1040" timestamp="1606942169388" />
+  </component>
+</project>
