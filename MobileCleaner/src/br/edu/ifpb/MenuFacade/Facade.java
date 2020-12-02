@@ -1,6 +1,6 @@
 package br.edu.ifpb.MenuFacade;
 
-import br.edu.ifpb.ActionDashboard.ActionDashboard;
+import br.edu.ifpb.ActionDashboard.ActionDashboardFacade;
 import br.edu.ifpb.CleanPlaceBuilder.CleanPlaceBuilder;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.UserManager;
@@ -21,7 +21,7 @@ public class Facade {
     MenuPrincipal menuPrincipal;
     MenuDashboardAdmin menuDashboardAdmin;
     MenuDashboardUser menuDashboardUser;
-    ActionDashboard actionDashboard;
+    ActionDashboardFacade actionDashboardFacade;
     CleanPlaceManager cleanPlaceManager;
     CleanPlaceBuilder cleanPlaceBuilder;
 
@@ -32,9 +32,9 @@ public class Facade {
         this.userManager = new UserManager();
         this.cleanPlaceManager = new CleanPlaceManager();
         this.userProxy = new UserProxy(this.userManager);
-        this.actionDashboard = new ActionDashboard(this.userManager);
-        this.menuDashboardAdmin = new MenuDashboardAdmin("Menu Administrador", this.actionDashboard, this.userManager, this.cleanPlaceManager, this.cleanPlaceBuilder, this.userBuilder);
-        this.menuDashboardUser = new MenuDashboardUser("Menu Usuário", this.actionDashboard, this.userManager, this.cleanPlaceManager);
+        this.actionDashboardFacade = new ActionDashboardFacade(this.userManager);
+        this.menuDashboardAdmin = new MenuDashboardAdmin("Menu Administrador", this.actionDashboardFacade, this.userManager, this.cleanPlaceManager, this.cleanPlaceBuilder, this.userBuilder);
+        this.menuDashboardUser = new MenuDashboardUser("Menu Usuário", this.actionDashboardFacade, this.userManager, this.cleanPlaceManager);
         this.menuPrincipal = new MenuPrincipal("Menu Principal",userBuilder, userAccessFactory, userManager, userProxy, menuDashboardAdmin, menuDashboardUser);
     }
 

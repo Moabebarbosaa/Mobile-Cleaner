@@ -3,7 +3,7 @@ package br.edu.ifpb.ConnectionDBSingleton;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Connection implements IConnection {
+public class Connection {
 
     public static Connection connection;
 
@@ -14,7 +14,7 @@ public class Connection implements IConnection {
         return connection;
     }
 
-    @Override
+
     public java.sql.Connection getConnection() {
         try {
             Class.forName("org.sqlite.JDBC");

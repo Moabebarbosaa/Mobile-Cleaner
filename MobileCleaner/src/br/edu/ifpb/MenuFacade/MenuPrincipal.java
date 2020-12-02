@@ -1,5 +1,6 @@
 package br.edu.ifpb.MenuFacade;
 
+import br.edu.ifpb.ActionDashboard.Proxy.AddAdmin;
 import br.edu.ifpb.ActionDashboard.Proxy.AddAdminProxy;
 import br.edu.ifpb.MenuFacade.ChainOfResponsability.IChain;
 import br.edu.ifpb.MenuFacade.ChainOfResponsability.SignUpLeaf;
@@ -95,7 +96,7 @@ public class MenuPrincipal extends MenuAbstract{
         String modelSmartphone = obterString("Modelo do celular: ");
 
         User user = this.userBuilder.setName(name).setLogin(login).setPass(pass).setModelSmartphone(modelSmartphone).builder();
-        AddAdminProxy addAdmin = new AddAdminProxy(this.userManager, cod);
+        AddAdmin addAdmin = new AddAdminProxy(this.userManager, cod);
         if (addAdmin.enter(user)) System.out.println("Admin adicionado com sucesso!");
         else System.out.println("\nCódigo para adicionar usuário errado.");
     }

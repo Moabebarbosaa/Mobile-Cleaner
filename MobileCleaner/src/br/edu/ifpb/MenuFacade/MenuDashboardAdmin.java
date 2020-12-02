@@ -1,6 +1,6 @@
 package br.edu.ifpb.MenuFacade;
 
-import br.edu.ifpb.ActionDashboard.ActionDashboard;
+import br.edu.ifpb.ActionDashboard.ActionDashboardFacade;
 import br.edu.ifpb.ActionDashboard.Iterator.IteratorList;
 import br.edu.ifpb.ActionDashboard.Iterator.ListUsers;
 import br.edu.ifpb.CleanPlaceBuilder.CleanPlaceBuilder;
@@ -18,15 +18,15 @@ public class MenuDashboardAdmin extends MenuAbstract{
 
     private final Scanner sc = new Scanner(System.in);
 
-    ActionDashboard actionDashboard;
+    ActionDashboardFacade actionDashboardFacade;
     UserManager userManager;
     CleanPlaceManager cleanPlaceManager;
     CleanPlaceBuilder cleanPlaceBuilder;
     IUserBuilder userBuilder;
 
-    public MenuDashboardAdmin(String title, ActionDashboard actionDashboard, UserManager userManager, CleanPlaceManager cleanPlaceManager, CleanPlaceBuilder cleanPlaceBuilder, IUserBuilder userBuilder) {
+    public MenuDashboardAdmin(String title, ActionDashboardFacade actionDashboardFacade, UserManager userManager, CleanPlaceManager cleanPlaceManager, CleanPlaceBuilder cleanPlaceBuilder, IUserBuilder userBuilder) {
         super(title);
-        this.actionDashboard = actionDashboard;
+        this.actionDashboardFacade = actionDashboardFacade;
         this.userManager = userManager;
         this.cleanPlaceManager = cleanPlaceManager;
         this.cleanPlaceBuilder = cleanPlaceBuilder;
@@ -56,7 +56,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
                     String login = obterString("Login do usuário para qual deseja mandar mensagem: ");
                     System.out.println("Mensagem: ");
                     String message = sc.nextLine();
-                    if (this.actionDashboard.sendMessage(this.userManager).send(login, message)) {
+                    if (this.actionDashboardFacade.sendMessage(this.userManager).send(login, message)) {
                         System.out.println("Mensagem enviada.");
                     } else {
                         System.out.println("Erro ao enviar mensagem.");
@@ -66,7 +66,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
                     showUsers();
                     break;
                 case 3:
-                    List<User> listBehind = this.actionDashboard.listUserBehind(this.userManager).showBehind();
+                    List<User> listBehind = this.actionDashboardFacade.listUserBehind(this.userManager).showBehind();
                     System.out.println("\nUsuários com limpeza atrasada: \n");
 
                     for (User user: listBehind) {
@@ -80,7 +80,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
                     String sector = sc.nextLine();
 
                     CleanPlace place = this.cleanPlaceBuilder.setName(name).setSector(sector).builder();
-                    if (this.actionDashboard.addCleanPlace(this.cleanPlaceManager).add(place)) {
+                    if (this.actionDashboardFacade.addCleanPlace(this.cleanPlaceManager).add(place)) {
                         System.out.println("Local adicionado.");
                     } else {
                         System.out.println("Erro ao adicionar local.");
@@ -94,7 +94,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
 
                     User user = this.userBuilder.setName(nameAdmin).setLogin(loginAdmin).setPass(passAdmin).setModelSmartphone(modelSmartphoneAdmin).setPermission("admin").builder();
 
-                    if (this.actionDashboard.addAdmin(this.userManager).enter(user)) System.out.println("\n\nCadastrado com sucesso.");
+                    if (this.actionDashboardFacade.addAdmin(this.userManager).enter(user)) System.out.println("\n\nCadastrado com sucesso.");
                     else System.out.println("Falha ao cadastrar.");
 
                     break;
@@ -112,7 +112,7 @@ public class MenuDashboardAdmin extends MenuAbstract{
     }
 
     public List<User> showSystemUsers(){
-        List<User> list = this.actionDashboard.showUserList(this.userManager).show();
+        List<User> list = this.actionDashboardFacade.showUserList(this.userManager).show();
         return list;
     }
 

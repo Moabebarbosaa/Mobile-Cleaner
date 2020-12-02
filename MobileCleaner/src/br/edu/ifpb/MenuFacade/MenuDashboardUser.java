@@ -1,6 +1,6 @@
 package br.edu.ifpb.MenuFacade;
 
-import br.edu.ifpb.ActionDashboard.ActionDashboard;
+import br.edu.ifpb.ActionDashboard.ActionDashboardFacade;
 import br.edu.ifpb.Model.CleanPlace.CleanPlace;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.User;
@@ -10,13 +10,13 @@ import java.util.List;
 
 public class MenuDashboardUser extends MenuAbstract{
 
-    ActionDashboard actionDashboard;
+    ActionDashboardFacade actionDashboardFacade;
     UserManager userManager;
     CleanPlaceManager cleanPlaceManager;
 
-    public MenuDashboardUser(String title, ActionDashboard actionDashboard, UserManager userManager, CleanPlaceManager cleanPlaceManager) {
+    public MenuDashboardUser(String title, ActionDashboardFacade actionDashboardFacade, UserManager userManager, CleanPlaceManager cleanPlaceManager) {
         super(title);
-        this.actionDashboard = actionDashboard;
+        this.actionDashboardFacade = actionDashboardFacade;
         this.userManager = userManager;
         this.cleanPlaceManager = cleanPlaceManager;
     }
@@ -39,7 +39,7 @@ public class MenuDashboardUser extends MenuAbstract{
 
             switch (chosenOption) {
                 case 1:
-                    if (this.actionDashboard.cleanUp(this.userManager).toClean(user.getLogin())) {
+                    if (this.actionDashboardFacade.cleanUp(this.userManager).toClean(user.getLogin())) {
                         System.out.println("Limpeza realizada com sucesso.");
                     } else {
                         System.out.println("Limpeza não realizada");
@@ -47,22 +47,22 @@ public class MenuDashboardUser extends MenuAbstract{
                     System.out.println();
                     break;
                 case 2:
-                    System.out.println("\nPróxima limpeza agendada para: " + this.actionDashboard.dateNextClean(this.userManager)
+                    System.out.println("\nPróxima limpeza agendada para: " + this.actionDashboardFacade.dateNextClean(this.userManager)
                             .showDateNextClean(user.getLogin()));
                     break;
                 case 3:
-                    String message = this.actionDashboard.verifyNotification(this.userManager).show(user);
+                    String message = this.actionDashboardFacade.verifyNotification(this.userManager).show(user);
                     System.out.println("Notificação: " + message);
                     break;
                 case 4:
-                    List<CleanPlace> list = this.actionDashboard.placesClean(this.cleanPlaceManager).show();
+                    List<CleanPlace> list = this.actionDashboardFacade.placesClean(this.cleanPlaceManager).show();
                     for (CleanPlace cleanPlace: list) {
                         System.out.println(cleanPlace.toString());
                     }
                     break;
                 case 5:
                     String modelSmartphone = this.userManager.getModelSmartphone(user.getLogin());
-                    System.out.println("\n" + this.actionDashboard.cleaningTips(modelSmartphone).showTipsStrategy() + "\n");
+                    System.out.println("\n" + this.actionDashboardFacade.cleaningTips(modelSmartphone).showTipsStrategy() + "\n");
                     break;
                 case 6:
                     return;

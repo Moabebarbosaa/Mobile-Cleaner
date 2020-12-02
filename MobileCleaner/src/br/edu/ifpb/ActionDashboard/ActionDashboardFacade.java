@@ -5,11 +5,11 @@ import br.edu.ifpb.ActionDashboard.Proxy.AddAdmin;
 import br.edu.ifpb.Model.CleanPlace.CleanPlaceManager;
 import br.edu.ifpb.Model.User.UserManager;
 
-public class ActionDashboard implements IActionDashboard{
+public class ActionDashboardFacade implements IActionDashboard{
 
     UserManager userManager;
 
-    public ActionDashboard(UserManager userManager) {
+    public ActionDashboardFacade(UserManager userManager) {
         this.userManager = userManager;
     }
 
