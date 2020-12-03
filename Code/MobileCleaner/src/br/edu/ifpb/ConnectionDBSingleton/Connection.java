@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class Connection {
 
-    public static Connection connection;
+    private static Connection connection;
 
     public static Connection getInstance() {
         if (connection == null) {
@@ -25,8 +25,6 @@ public class Connection {
             throw  new RuntimeException(ex);
         }
     }
-
-
 
 }
 

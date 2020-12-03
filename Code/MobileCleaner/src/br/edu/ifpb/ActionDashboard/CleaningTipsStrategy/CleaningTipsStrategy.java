@@ -22,7 +22,9 @@ public class CleaningTipsStrategy{
                 this.tips = showTips.show();
                 break;
             default:
-                this.tips = "Não temos dicas para seu smartphone no momento.";
+                showTips = new DefaultTips();
+                this.tips = showTips.show();
+                break;
         }
     }
 

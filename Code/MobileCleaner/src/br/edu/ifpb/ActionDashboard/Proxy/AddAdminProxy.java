@@ -5,7 +5,7 @@ import br.edu.ifpb.Model.User.User;
 import br.edu.ifpb.Model.User.UserManager;
 
 
-public class AddAdminProxy  extends AddAdmin{
+public class AddAdminProxy extends AddAdmin{
 
     protected String codigoAdmin;
 
